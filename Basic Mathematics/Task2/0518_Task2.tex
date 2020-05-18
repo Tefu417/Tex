@@ -1,0 +1,222 @@
+\documentclass{jsarticle}
+
+\usepackage{amsmath}
+\usepackage{setspace}
+
+\title{基礎数理演習課題2}
+\author{21716070 縫嶋慧深}
+
+\begin{document}
+
+	\maketitle
+
+	\section*{0}
+	次の行列の計算をして下さい。
+
+	\begin{description}
+		\setlength{\itemsep}{0.5cm}
+
+		\item[(1)]
+			$ \begin{pmatrix}
+				-2 & 6 \\
+				5 & 4 \\
+				1 & -3
+			\end{pmatrix} $
+			-
+			$ 3 \begin{pmatrix}
+				-2 & 3 \\
+				4 & -1 \\
+				0 & 2
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				4 & -3 \\
+				-7 & 7 \\
+				1 & -9
+			\end{pmatrix} $
+
+		\item[(2)]
+			$ \begin{pmatrix}
+				-1 & 2 \\
+				2 & 1 \\
+				1 & -1
+			\end{pmatrix} $
+			$ \begin{pmatrix}
+				4 & 0 \\
+				-3 & 1
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				-10 & 2 \\
+				5 & 1 \\
+				7 & -1
+			\end{pmatrix} $
+
+		\item[(3)]
+			$ \begin{pmatrix}
+				6 & 1 \\
+				0 & -5
+			\end{pmatrix} $
+			$ \begin{pmatrix}
+				8 & -1 & 5 \\
+				-7 & 3 & 0
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				41 & -3 & 30 \\
+				35 & -15 & 0
+			\end{pmatrix} $
+
+		\item[(4)]
+			$ \begin{pmatrix}
+				-1 \\
+				-2 \\
+				2
+			\end{pmatrix} $
+			$ \begin{pmatrix}
+				1 & 0 & 2 & -5
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				-1 & 0 & -2 & 5 \\
+				-2 & 0 & -4 & 10 \\
+				2 & 0 & 4 & -10
+			\end{pmatrix} $
+
+		\item[(5)]
+			$ \begin{pmatrix}
+				1 & 2 & 3 \\
+				-1 & -1 & -2 \\
+				3 & -2 & 1
+			\end{pmatrix} $
+			$ \begin{pmatrix}
+				1 & 0 & -1 \\
+				1 & 0 & -1 \\
+				-1 & 0 & 1
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				0 & 0 & 0 \\
+				0 & 0 & 0 \\
+				0 & 0 & 0
+			\end{pmatrix} $
+
+		\item[(6)]
+			$ \begin{pmatrix}
+				2 & -9 \\
+				4 & 6 \\
+				3 & 0
+			\end{pmatrix} $
+			$ \begin{pmatrix}
+				1 & 0 & 0 \\
+				0 & 0 & 1 \\
+				0 & 1 & 0
+			\end{pmatrix} $
+
+			行列の次元が矛盾しているため、計算できない。
+	\end{description}
+
+	\newpage
+
+	\section{}
+	次の行列が逆行列を持つか判定し、持つならば逆行列も求めて下さい。
+
+	\begin{description}
+
+		\setlength{\itemsep}{0.5cm}
+		\begin{spacing}{1.2}
+
+		\item[(1)]
+			$A$ =
+			$ \begin{pmatrix}
+				2 & 1 \\
+				5 & 3
+			\end{pmatrix} $
+
+			$ det(A) = 6 - 5 = 1 \neq 0 $
+
+			$ A^{-1} = \frac{1}{1} $
+			$ \begin{pmatrix}
+				3 & -1 \\
+				-5 & 2
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				3 & -1 \\
+				-5 & 2
+			\end{pmatrix} $
+
+		\item[(2)]
+			$A$ =
+			$ \begin{pmatrix}
+				-1 & 2 \\
+				3 & -4
+			\end{pmatrix} $
+
+			$ det(A) = 4 - 6 = -2 \neq 0 $
+
+			$ A^{-1} = -\frac{1}{2} $
+			$ \begin{pmatrix}
+				4 & 2 \\
+				3 & 1
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				2 & 1 \\
+				\frac{3}{2} & \frac{1}{2}
+			\end{pmatrix} $
+
+		\item[(3)]
+			$A$ =
+			$ \begin{pmatrix}
+				5 & 6 \\
+				6 & 7
+			\end{pmatrix} $
+
+			$ det(A) = 35 - 36 = -1 \neq 0 $
+
+			$A^{-1}$ =
+			$ -\begin{pmatrix}
+				7 & -6 \\
+				-6 & 5
+			\end{pmatrix} $
+			=
+			$ \begin{pmatrix}
+				-7 & 6 \\
+				6 & -5
+			\end{pmatrix} $
+
+		\item[(4)]
+			$ \begin{pmatrix}
+				3 & -1 & 4 \\
+				4 & 1 & 3 \\
+				1 & 3 & -2
+			\end{pmatrix} $
+
+			$ det(A) = -6 + (-3) + 48 - 4 - 8 - 27 = 0 $
+
+			$ det(A) = 0 $ より、逆行列を持たない。
+
+		\item[(5)]
+			$A$ =
+			$ \begin{pmatrix}
+				1 & 1 & 2 \\
+				2 & 4 & 4 \\
+				3 & 3 & 6
+			\end{pmatrix} $
+
+			$ det(A) = 24 + 12 + 12 - 24 - 12 - 12 = 0 $
+
+			$ det(A) = 0 $ より、逆行列を持たない。
+
+		\item[(6)]
+			$A$ =
+			$ \begin{pmatrix}
+				-3
+			\end{pmatrix} $
+
+			行列 $A$ は正則行列でないため、逆行列を持たない。
+
+		\end{spacing}
+	\end{description}
+\end{document}
