@@ -1,0 +1,362 @@
+\documentclass[fleqn]{jsarticle}
+
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{nccmath}
+\usepackage{type1cm}
+
+\title{基礎数理演習課題4}
+\author{21716070 縫嶋慧深}
+
+\begin{document}
+
+	\maketitle
+
+    \section*{0}
+    次の行列の関係式について以下をそれぞれ求めて下さい。\\\\
+    $ \begin{pmatrix}
+        1 & 0 & 2 \\
+        0 & 1 & -1 \\
+        2 & 1 & 2
+    \end{pmatrix} $
+    $ \begin{pmatrix}
+        x_1 & x_2 & x_3 \\
+        y_1 & y_2 & y_3 \\
+        z_1 & z_2 & z_3
+    \end{pmatrix} $
+    =
+    $ \begin{pmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{pmatrix} $\\\\
+
+    \begin{description}
+		\setlength{\itemsep}{0.5cm}
+        \begin{spacing}{1.2}
+
+            \item[(1)]
+                $ x_1, y_1, z_1 $ \\\\
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 2 & 1 \\
+                        0 & 1 & -1 & 0 \\
+                        2 & 1 & 2 & 0
+                    \end{array}
+                \right) $
+                $ \xrightarrow{R_3-2R_1} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 1 \\
+                        0 & 1 & 0 & 0 \\
+                        0 & 1 & -2 & -2
+                    \end{array}
+                \right) $
+                $ \xrightarrow{R_3-R_2} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 1 \\
+                        0 & 1 & 0 & 0 \\
+                        0 & 0 & -2 & -2
+                    \end{array}
+                \right) $\\
+                $ \xrightarrow{R_3\times(-\frac{1}{2})} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 1 \\
+                        0 & 1 & 0 & 0 \\
+                        0 & 0 & 1 & 1
+                    \end{array}
+                \right)
+                \hspace{60pt}
+                (x_1, y_1, z_1) = (1, 0, 1) $
+
+            \item[(2)]
+                $ x_2, y_2, z_2 $ \\\\
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 2 & 0 \\
+                        0 & 1 & -1 & 1 \\
+                        2 & 1 & 2 & 0
+                    \end{array}
+                \right) $
+                $ \xrightarrow{R_3-2R_1} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 0 \\
+                        0 & 1 & 0 & 1 \\
+                        0 & 1 & -2 & 0
+                    \end{array}
+                \right) $
+                $ \xrightarrow{R_3-R_2} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 0 \\
+                        0 & 1 & 0 & 1 \\
+                        0 & 0 & -2 & -1
+                    \end{array}
+                \right) $\\
+                $ \xrightarrow{R_3\times(-\frac{1}{2})} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 0 \\
+                        0 & 1 & 0 & 1 \\
+                        0 & 0 & 1 & \frac{1}{2}
+                    \end{array}
+                \right)
+                \hspace{60pt}
+                (x_2, y_2, z_2) = (0, 1, \frac{1}{2}) $
+
+            \newpage
+
+            \item[(3)]
+                $ x_3, y_3, z_3 $ \\\\
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 2 & 0 \\
+                        0 & 1 & -1 & 0 \\
+                        2 & 1 & 2 & 1
+                    \end{array}
+                \right) $
+                $ \xrightarrow{R_3-2R_1} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 0 \\
+                        0 & 1 & 0 & 0 \\
+                        0 & 1 & -2 & 1
+                    \end{array}
+                \right) $
+                $ \xrightarrow{R_3-R_2} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 0 \\
+                        0 & 1 & 0 & 0 \\
+                        0 & 0 & -2 & 1
+                    \end{array}
+                \right) $\\
+                $ \xrightarrow{R_3\times(-\frac{1}{2})} $
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 0 \\
+                        0 & 1 & 0 & 1 \\
+                        0 & 0 & 1 & -\frac{1}{2}
+                    \end{array}
+                \right)
+                \hspace{60pt}
+                (x_3, y_3, z_3) = (0, 0, -\frac{1}{2}) $
+
+        \end{spacing}
+    \end{description}
+
+    \section{}
+    次の連立一次方程式の解を、行列の基本変形を用いて求めて下さい。\\
+
+    \begin{description}
+		\setlength{\itemsep}{0.5cm}
+        \begin{spacing}{1.2}
+
+            \item[(1)]
+                $ \left\{
+                    \begin{array}{l}
+                        4x + 3y = 0 \\
+                        3x + 2y = -1 \\
+                        -2x - y = 2
+                    \end{array}
+                \right. $ \\\\
+                拡大係数行列を簡約化する。\\\\
+                $ \left(
+                    \begin{array}{cc|c}
+                        4 & 3 & 0 \\
+                        3 & 2 & -1 \\
+                        -2 & -1 & 2
+                    \end{array}
+                \right)
+                \xrightarrow{R_1 \times \frac{1}{4}}
+                \left(
+                    \begin{array}{cc|c}
+                        1 & \frac{3}{4} & 0 \\
+                        3 & 2 & -1 \\
+                        -2 & -1 & 2
+                    \end{array}
+                \right)
+                \xrightarrow{\substack{R_2-R_1 \times 3 \\ R_3+R_1 \times 2}}
+                \left(
+                    \begin{array}{cc|c}
+                        1 & \frac{3}{4} & 0 \\
+                        0 & -\frac{1}{4} & -1 \\
+                        0 & \frac{1}{2} & 2
+                    \end{array}
+                \right)\\
+                \xrightarrow{\substack{R_2 \times (-4) \\ R_3 \times 2}}
+                \left(
+                    \begin{array}{cc|c}
+                        1 & \frac{3}{4} & 0 \\
+                        0 & 1 & 4 \\
+                        0 & 1 & 4
+                    \end{array}
+                \right)
+                \xrightarrow{\substack{R_1-R_2 \times \frac{3}{4} \\ R_3-R_2}}
+                \left(
+                    \begin{array}{cc|c}
+                        1 & 0 & -3 \\
+                        0 & 1 & 4 \\
+                        0 & 0 & 0
+                    \end{array}
+                \right) $ \\\\
+                連立方程式に戻すと、
+                $ \left\{
+                    \begin{array}{l}
+                        x = -3 \\
+                        y = 4
+                    \end{array}
+                \right. $
+
+            \item[(2)]
+                $ \left\{
+                    \begin{array}{l}
+                        -2x + y + z = 2 \\
+                        x - 2y + z = 2 \\
+                        x + y - 2z = -4
+                    \end{array}
+                \right. $ \\\\
+                拡大係数行列を簡約化する。\\\\
+                $ \left(
+                    \begin{array}{ccc|c}
+                        -2 & 1 & 1 & 2 \\
+                        1 & -2 & 1 & 2 \\
+                        1 & 1 & -2 & -4
+                    \end{array}
+                \right)
+                \xrightarrow{R_1 \times -\frac{1}{2}}
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & -\frac{1}{2} & -\frac{1}{2} & -1 \\
+                        1 & -2 & 1 & 2 \\
+                        1 & 1 & -2 & -4
+                    \end{array}
+                \right)
+                \xrightarrow{\substack{R_2-R_1 \\ R_3-R_1}}
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & -\frac{1}{2} & -\frac{1}{2} & -1 \\
+                        0 & -\frac{3}{2} & \frac{3}{2} & 3 \\
+                        0 & \frac{3}{2} & -\frac{3}{2} & -3
+                    \end{array}
+                \right)\\
+                \xrightarrow{R_3-R_2}
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & -\frac{1}{2} & -\frac{1}{2} & -1 \\
+                        0 & -\frac{3}{2} & \frac{3}{2} & 3 \\
+                        0 & 0 & 0 & 0
+                    \end{array}
+                \right)
+                \xrightarrow{R_2 \times (-\frac{2}{3})}
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & -\frac{1}{2} & -\frac{1}{2} & -1 \\
+                        0 & 1 & -1 & -2 \\
+                        0 & 0 & 0 & 0
+                    \end{array}
+                \right)
+                \xrightarrow{R_1+R_2 \times \frac{1}{2}}
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & -1 & -2 \\
+                        0 & 1 & -1 & -2 \\
+                        0 & 0 & 0 & 0
+                    \end{array}
+                \right) $ \\\\
+                連立方程式に戻すと、
+                $ \left\{
+                    \begin{array}{l}
+                        x - z = -2 \\
+                        y - z = -2
+                    \end{array}
+                \right. $ \\\\
+                主成分を左辺に残し、残りを右辺に移行する。
+                $ \left\{
+                    \begin{array}{l}
+                        x = z - 2 \\
+                        y = z - 2
+                    \end{array}
+                \right. $ \\\\
+                $z$ を $s \in \mathbb{R}$ とおくと、
+                $ \left\{
+                    \begin{array}{l}
+                        x = s - 2 \\
+                        y = s - 2 \\
+                        z = s
+                    \end{array}
+                \right.
+                (s \in \mathbb{R}) $
+
+            \item[(3)]
+                $ \left\{
+                    \begin{array}{l}
+                        x - y + z + w = 1 \\
+                        2x - 2y - z + 2w = -1 \\
+                        3x - 3y + z + 3w = 1
+                    \end{array}
+                \right. $ \\\\
+                拡大係数行列を簡約化する。\\\\
+                $ \left(
+                    \begin{array}{cccc|c}
+                        1 & -1 & 1 & 1 & 1 \\
+                        2 & -2 & -1 & 2 & -1 \\
+                        3 & -3 & 1 & 3 & 1
+                    \end{array}
+                \right)
+                \xrightarrow{\substack{R_2-2R_1 \\ R_3-3R_1}}
+                \left(
+                    \begin{array}{cccc|c}
+                        1 & -1 & 1 & 1 & 1 \\
+                        0 & 0 & -3 & 0 & -3 \\
+                        0 & 0 & -2 & 0 & -2
+                    \end{array}
+                \right)
+                \xrightarrow{\substack{R_2 \times (-\frac{1}{3}) \\ R_3 \times (-\frac{1}{2})}}
+                \left(
+                    \begin{array}{cccc|c}
+                        1 & -1 & 1 & 1 & 1 \\
+                        0 & 0 & 1 & 0 & 1 \\
+                        0 & 0 & 1 & 0 & 1
+                    \end{array}
+                \right)\\
+                \xrightarrow{\substack{R_1-R_2 \\ R_3-R_2}}
+                \left(
+                    \begin{array}{cccc|c}
+                        1 & -1 & 0 & 1 & 0 \\
+                        0 & 0 & 1 & 0 & 1 \\
+                        0 & 0 & 0 & 0 & 0
+                    \end{array}
+                \right)$ \\\\
+                連立方程式に戻すと、
+                $ \left\{
+                    \begin{array}{l}
+                        x - y + w = 0 \\
+                        z = 1
+                    \end{array}
+                \right. $ \\\\
+                主成分 $x, z$ を左辺に残し、残りを右辺に移行する。
+                $ \left\{
+                    \begin{array}{l}
+                        x = y - w \\
+                        z = 1
+                    \end{array}
+                \right. $ \\\\
+                $y, w$ をそれぞれ $s, t \in \mathbb{R}$ とおくと、
+                $ \left\{
+                    \begin{array}{l}
+                        x = s - t \\
+                        y = s \\
+                        z = 1 \\
+                        w = t
+                    \end{array}
+                \right.
+                (s, t \in \mathbb{R}) $
+
+        \end{spacing}
+    \end{description}
+
+\end{document}
