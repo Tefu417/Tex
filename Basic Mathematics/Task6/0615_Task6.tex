@@ -156,7 +156,7 @@
     \end{description}
 
     \section*{2}
-    次の実3次元ベクトルに対し、$(1)\sim(3)$を求めて下さい。\\
+    次の実3次元数ベクトルに対し、$(1)\sim(3)$を求めて下さい。\\
     $ \vec{a}
     =
     \left(
@@ -194,7 +194,9 @@
 
             \item[(1)]
                 $ (\vec{a}+\vec{b})\times\vec{c} $\\
-                $ \left(
+                $ (\vec{a}+\vec{b})\times\vec{c}
+                =
+                \left(
                     \begin{array}{c}
                         2 \\
                         2 \\
@@ -209,96 +211,147 @@
                         2
                     \end{array}
                 \right)
+                =
+                8 + (-2) + 8
+                =
+                14
                 $
+
+            \item[(2)]
+                $ \vec{a},\vec{b},\vec{c} $のなす平行六面体の体積 \\
+                $ V =
+                (\vec{a} \times \vec{b}) \cdot \vec{c}
+                =
+                (
+                    \left(
+                        \begin{array}{c}
+                            0 \\
+                            1 \\
+                            1
+                        \end{array}
+                    \right)
+                    \times
+                    \left(
+                        \begin{array}{c}
+                            2 \\
+                            1 \\
+                            3
+                        \end{array}
+                    \right)
+                )
+                \cdot
+                \left(
+                    \begin{array}{c}
+                        4 \\
+                        -1 \\
+                        2
+                    \end{array}
+                \right)
+                =
+                \left(
+                    \begin{array}{c}
+                        2 \\
+                        2 \\
+                        -2
+                    \end{array}
+                \right)
+                \cdot
+                \left(
+                    \begin{array}{c}
+                        4 \\
+                        -1 \\
+                        2
+                    \end{array}
+                \right)
+                = 8 + (-2) + (-4)
+                = 2
+                $
+
+            \item[(3)]
+                $ \triangle ABC $ の面積 \\
+                $ S =
+                \frac{1}{2} \sqrt{|\vec{AB}|^2|\vec{AC}|^2 - (\vec{AB} \cdot \vec{AC})^2} $ より、\\
+                $ \vec{AB} =
+                \left(
+                    \begin{array}{c}
+                        0 \\
+                        1 \\
+                        1
+                    \end{array}
+                \right)
+                \times
+                \left(
+                    \begin{array}{c}
+                        2 \\
+                        1 \\
+                        3
+                    \end{array}
+                \right)
+                =
+                \left(
+                    \begin{array}{c}
+                        0 \\
+                        1 \\
+                        3
+                    \end{array}
+                \right) $ \\
+                $ |\vec{AB}|
+                = \sqrt{0 + 1 + 9}
+                = \sqrt{10} $ \\
+                $ \vec{AC} =
+                \left(
+                    \begin{array}{c}
+                        0 \\
+                        1 \\
+                        1
+                    \end{array}
+                \right)
+                \times
+                \left(
+                    \begin{array}{c}
+                        4 \\
+                        -1 \\
+                        2
+                    \end{array}
+                \right)
+                =
+                \left(
+                    \begin{array}{c}
+                        0 \\
+                        -1 \\
+                        2
+                    \end{array}
+                \right) $ \\
+                $ |\vec{AC}|
+                = \sqrt{0 + 1 + 4}
+                = \sqrt{5} $ \\
+                $ \vec{AB} \cdot \vec{AC} =
+                \left(
+                    \begin{array}{c}
+                        0 \\
+                        1 \\
+                        3
+                    \end{array}
+                \right)
+                \times
+                \left(
+                    \begin{array}{c}
+                        0 \\
+                        -1 \\
+                        2
+                    \end{array}
+                \right)
+                = 0 + (-1) + 6
+                = 5 $ \\
+                $ S = \frac{1}{2} \sqrt{10 \times 5 - 25}
+                = \frac{1}{2} \times 5
+                = \frac{5}{2} $
 
         \end{spacing}
     \end{description}
 
-
-    $ A =
-    \left(
-        \begin{array}{cccc}
-            1 & 2 & -1 & 4 \\
-            -2 & 3 & 2 & -5 \\
-            -1 & 5 & 1 & -1 \\
-            4 & 2 & -3 & 12
-        \end{array}
-    \right) $\\\\
-    $ \left(
-        \begin{array}{cccc}
-            1 & 2 & -1 & 4 \\
-            -2 & 3 & 2 & -5 \\
-            -1 & 5 & 1 & -1 \\
-            4 & 2 & -3 & 12
-        \end{array}
-    \right)
-    \longleftrightarrow
-    \left(
-        \begin{array}{cccc}
-            1 & 2 & -1 & 4 \\
-            0 & 7 & 0 & 3 \\
-            0 & 7 & 0 & 3 \\
-            0 & -6 & 1 & -4
-        \end{array}
-    \right)
-    \longleftrightarrow
-    \left(
-        \begin{array}{cccc}
-            1 & 2 & -1 & 4 \\
-            0 & 7 & 0 & 3 \\
-            0 & 0 & 0 & 0 \\
-            0 & -6 & 1 & -4
-        \end{array}
-    \right)
-    \longleftrightarrow
-    \left(
-        \begin{array}{cccc}
-            1 & 2 & -1 & 4 \\
-            0 & 1 & 1 & -1 \\
-            0 & 0 & 0 & 0 \\
-            0 & -6 & 1 & -4
-        \end{array}
-    \right) \\
-    \longleftrightarrow
-    \left(
-        \begin{array}{cccc}
-            1 & 0 & -3 & 6 \\
-            0 & 1 & 1 & -1 \\
-            0 & 0 & 0 & 0 \\
-            0 & 0 & 7 & -10
-        \end{array}
-    \right)
-    \longleftrightarrow
-    \left(
-        \begin{array}{cccc}
-            1 & 0 & -3 & 6 \\
-            0 & 1 & 1 & -1 \\
-            0 & 0 & 7 & -10 \\
-            0 & 0 & 0 & 0
-        \end{array}
-    \right)
-    \longleftrightarrow
-    \left(
-        \begin{array}{cccc}
-            1 & 0 & -3 & 6 \\
-            0 & 1 & 1 & -1 \\
-            0 & 0 & 1 & -\frac{10}{7} \\
-            0 & 0 & 0 & 0
-        \end{array}
-    \right)
-    \longleftrightarrow
-    \left(
-        \begin{array}{cccc}
-            1 & 0 & 0 & \frac{12}{7} \\
-            0 & 1 & 0 & \frac{3}{7} \\
-            0 & 0 & 1 & -\frac{10}{7} \\
-            0 & 0 & 0 & 0
-        \end{array}
-    \right) $ \\\\
-    行列$A$の階数は$3$ \\\\
-
     \section*{3}
-    次の行列の逆行列を求めて下さい。\\\\
+    次の正方行列の逆行列を求めて下さい。持たない場合はその判定もして下さい。\\\\
 
     \begin{description}
 		\setlength{\itemsep}{0.5cm}
@@ -307,81 +360,160 @@
             \item[(1)]
                 $ A =
                 \left(
-                    \begin{array}{ccc}
-                        1 & 2 & 3 \\
-                        1 & 1 & 2 \\
-                        1 & 2 & 2
+                    \begin{array}{c}
+                        -\frac{3}{4}
                     \end{array}
                 \right) $ \\\\
-                $ \left(
-                    \begin{array}{c|c}
-                        A & E_n
-                    \end{array}
-                \right)
-                =
+                $ A^{-1} =
                 \left(
-                    \begin{array}{ccc|ccc}
-                        1 & 2 & 3 & 1 & 0 & 0 \\
-                        1 & 1 & 2 & 0 & 1 & 0 \\
-                        1 & 2 & 2 & 0 & 0 & 1
-                    \end{array}
-                \right) $ \\
-                $ \longleftrightarrow
-                \left(
-                    \begin{array}{ccc|ccc}
-                        1 & 2 & 3 & 1 & 0 & 0 \\
-                        0 & -1 & -1 & -1 & 1 & 0 \\
-                        0 & 0 & -1 & -1 & 0 & 1
-                    \end{array}
-                \right)
-                \longleftrightarrow
-                \left(
-                    \begin{array}{ccc|ccc}
-                        1 & 2 & 3 & 1 & 0 & 0 \\
-                        0 & 1 & 1 & 1 & -1 & 0 \\
-                        0 & 0 & 1 & 1 & 0 & -1
-                    \end{array}
-                \right)
-                \longleftrightarrow
-                \left(
-                    \begin{array}{ccc|ccc}
-                        1 & 0 & 1 & -1 & 2 & 0 \\
-                        0 & 1 & 1 & 1 & -1 & 0 \\
-                        0 & 0 & 1 & 1 & 0 & -1
-                    \end{array}
-                \right) \\
-                \longleftrightarrow
-                \left(
-                    \begin{array}{ccc|ccc}
-                        1 & 0 & 0 & -2 & 2 & 1 \\
-                        0 & 1 & 0 & 0 & -1 & 1 \\
-                        0 & 0 & 1 & 1 & 0 & -1
-                    \end{array}
-                \right)
-                =
-                \left(
-                    \begin{array}{c|c}
-                        E_n & B
-                    \end{array}
-                \right) $ \\\\
-                $ \therefore
-                A^{-1} =
-                \left(
-                    \begin{array}{ccc}
-                        -2 & 2 & 1 \\
-                        0 & -1 & 1 \\
-                        1 & 0 & -1
+                    \begin{array}{c}
+                        -\frac{4}{3}
                     \end{array}
                 \right) $
 
             \item[(2)]
                 $ A =
                 \left(
+                    \begin{array}{cc}
+                        7 & 9 \\
+                        4 & 5
+                    \end{array}
+                \right) $ \\\\
+                $ detA = 35 - 36 = -1 $ \\\\
+                $ A^{-1} =
+                -\left(
+                    \begin{array}{cc}
+                        5 & -9 \\
+                        -4 & 7
+                    \end{array}
+                \right)
+                =
+                \left(
+                    \begin{array}{cc}
+                        -5 & 9 \\
+                        4 & -7
+                    \end{array}
+                \right) $
+
+            \item[(3)]
+                $ A =
+                \left(
+                    \begin{array}{cc}
+                        4 & -6 \\
+                        -6 & 9
+                    \end{array}
+                \right) $ \\\\
+                $ detA = 36 - 36 = 0 $ \\
+                $ \therefore A $ は逆行列を持たない。
+
+            \item[(4)]
+                $ A =
+                \left(
+                    \begin{array}{cc}
+                        \sqrt{6} & -2 \\
+                        1 & \sqrt{6}
+                    \end{array}
+                \right) $ \\\\
+                $ detA = 6 - (-2) = 8 $ \\\\
+                $ A^{-1} =
+                \frac{1}{8} \left(
+                    \begin{array}{cc}
+                        \sqrt{6} & 2 \\
+                        -1 & \sqrt{6}
+                    \end{array}
+                \right) $
+
+            \item[(5)]
+                $ A =
+                \left(
+                    \begin{array}{ccc}
+                        -1 & 1 & 2 \\
+                        2 & 6 & 4 \\
+                        5 & 4 & -1
+                    \end{array}
+                \right) $ \\
+                $ detA = 6 + 20 + 16 - 60 - (-2) - (-16) = 0 $ \\
+                $ \therefore A $ は逆行列を持たない。
+
+            \item[(6)]
+                $ A =
+                \left(
+                    \begin{array}{ccc}
+                        1 & 2 & -2 \\
+                        2 & 2 & -3 \\
+                        -1 & -1 & 2
+                    \end{array}
+                \right) $ \\\\
+                $ detA = 4 + 6 + 4 - 4 - 8 - 3 = -1 $ \\\\
+                $ \left(
+                    \begin{array}{c|c}
+                        A & E_n
+                    \end{array}
+                \right)
+                =
+                \left(
+                    \begin{array}{ccc|ccc}
+                        1 & 2 & -2 & 1 & 0 & 0 \\
+                        2 & 2 & -3 & 0 & 1 & 0 \\
+                        -1 & -1 & 2 & 0 & 0 & 1
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|ccc}
+                        1 & 2 & -2 & 1 & 0 & 0 \\
+                        0 & -2 & 1 & -2 & 1 & 0 \\
+                        0 & 1 & 0 & 1 & 0 & 1
+                    \end{array}
+                \right) \\\\
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|ccc}
+                        1 & 2 & -2 & 1 & 0 & 0 \\
+                        0 & 1 & 0 & 1 & 0 & 1 \\
+                        0 & -2 & 1 & -2 & 1 & 0
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|ccc}
+                        1 & 0 & -2 & -1 & 0 & -2 \\
+                        0 & 1 & 0 & 1 & 0 & 1 \\
+                        0 & 0 & 1 & 0 & 1 & 2
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|ccc}
+                        1 & 0 & 0 & -1 & 2 & 2 \\
+                        0 & 1 & 0 & 1 & 0 & 1 \\
+                        0 & 0 & 1 & 0 & 1 & 2
+                    \end{array}
+                \right) \\\\
+                =
+                \left(
+                    \begin{array}{c|c}
+                        E_n & B
+                    \end{array}
+                \right) $ \\\\
+                $ \therefore
+                A^{-1} =
+                \left(
+                    \begin{array}{ccc}
+                        -1 & 2 & 2 \\
+                        1 & 0 & 1 \\
+                        0 & 1 & 2
+                    \end{array}
+                \right) $
+
+            \item[(7)]
+                $ A =
+                \left(
                     \begin{array}{cccc}
-                        1 & -1 & 0 & 0 \\
-                        0 & 1 & -1 & 0 \\
-                        0 & 0 & 1 & -1 \\
-                        0 & 0 & 0 & 1
+                        -1 & 0 & 1 & 1 \\
+                        0 & 0 & 1 & 1 \\
+                        1 & 1 & 0 & 0 \\
+                        1 & 1 & 0 & -1
                     \end{array}
                 \right) $ \\\\
                 $ \left(
@@ -392,37 +524,64 @@
                 =
                 \left(
                     \begin{array}{cccc|cccc}
-                        1 & -1 & 0 & 0 & 1 & 0 & 0 & 0 \\
-                        0 & 1 & -1 & 0 & 0 & 1 & 0 & 0 \\
-                        0 & 0 & 1 & -1 & 0 & 0 & 1 & 0 \\
-                        0 & 0 & 0 & 1 & 0 & 0 & 0 & 1
-                    \end{array}
-                \right) $ \\
-                $ \longleftrightarrow
-                \left(
-                    \begin{array}{cccc|cccc}
-                        1 & 0 & -1 & 0 & 1 & 1 & 0 & 0 \\
-                        0 & 1 & -1 & 0 & 0 & 1 & 0 & 0 \\
-                        0 & 0 & 1 & -1 & 0 & 0 & 1 & 0 \\
-                        0 & 0 & 0 & 1 & 0 & 0 & 0 & 1
+                        -1 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+                        0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+                        1 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+                        1 & 1 & 0 & -1 & 0 & 0 & 0 & 1
                     \end{array}
                 \right)
                 \longleftrightarrow
                 \left(
                     \begin{array}{cccc|cccc}
-                        1 & 0 & 0 & -1 & 1 & 1 & 1 & 0 \\
-                        0 & 1 & 0 & -1 & 0 & 1 & 1 & 0 \\
-                        0 & 0 & 1 & -1 & 0 & 0 & 1 & 0 \\
-                        0 & 0 & 0 & 1 & 0 & 0 & 0 & 1
+                        1 & 0 & -1 & -1 & -1 & 0 & 0 & 0 \\
+                        1 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+                        0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+                        1 & 1 & 0 & -1 & 0 & 0 & 0 & 1
                     \end{array}
                 \right) \\
                 \longleftrightarrow
                 \left(
                     \begin{array}{cccc|cccc}
-                        1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
-                        0 & 1 & 0 & 0 & 0 & 1 & 1 & 1 \\
-                        0 & 0 & 1 & 0 & 0 & 0 & 1 & 1 \\
-                        0 & 0 & 0 & 1 & 0 & 0 & 0 & 1
+                        1 & 0 & -1 & -1 & -1 & 0 & 0 & 0 \\
+                        0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 \\
+                        0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+                        0 & 1 & 1 & 0 & 1 & 0 & 0 & 1
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cccc|cccc}
+                        1 & 0 & -1 & -1 & -1 & 0 & 0 & 0 \\
+                        0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 \\
+                        0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+                        0 & 0 & 0 & -1 & 0 & 0 & -1 & 1
+                    \end{array}
+                \right) \\
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cccc|cccc}
+                        1 & 0 & 0 & 0 & -1 & 1 & 0 & 0 \\
+                        0 & 1 & 0 & 0 & 1 & -1 & 1 & 0 \\
+                        0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+                        0 & 0 & 0 & -1 & 0 & 0 & -1 & 1
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cccc|cccc}
+                        1 & 0 & 0 & 0 & -1 & 1 & 0 & 0 \\
+                        0 & 1 & 0 & 0 & 1 & -1 & 1 & 0 \\
+                        0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+                        0 & 0 & 0 & 1 & 0 & 0 & 1 & -1
+                    \end{array}
+                \right) \\
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cccc|cccc}
+                        1 & 0 & 0 & 0 & -1 & 1 & 0 & 0 \\
+                        0 & 1 & 0 & 0 & 1 & -1 & 1 & 0 \\
+                        0 & 0 & 1 & 0 & 0 & 1 & -1 & 1 \\
+                        0 & 0 & 0 & 1 & 0 & 0 & 1 & -1
                     \end{array}
                 \right)
                 =
@@ -430,19 +589,261 @@
                     \begin{array}{c|c}
                         E_n & B
                     \end{array}
-                \right) $ \\
+                \right) $ \\\\
                 $ \therefore
                 A^{-1} =
                 \left(
                     \begin{array}{cccc}
-                        1 & 1 & 1 & 1 \\
-                        0 & 1 & 1 & 1 \\
-                        0 & 0 & 1 & 1 \\
-                        0 & 0 & 0 & 1
+                        -1 & 1 & 0 & 0 \\
+                        1 & -1 & 1 & 0 \\
+                        0 & 1 & -1 & 1 \\
+                        0 & 0 & 1 & -1
                     \end{array}
                 \right) $
 
         \end{spacing}
     \end{description}
+
+    \section*{4}
+    次の連立一次方程式を解いて下さい。持たない場合はその判定もして下さい。
+    ただし、$ l = 0 $
+
+    \begin{description}
+		\setlength{\itemsep}{0.5cm}
+        \begin{spacing}{1.2}
+
+            \item[(1)]
+            $ \left\{
+                \begin{array}{l}
+                    x + y = -1 \\
+                    3x + 4y = 4 \\
+                    5x + 6y = 0
+                \end{array}
+            \right. $ \\\\
+            拡大係数行列を簡約化する。\\\\
+                $ \left(
+                    \begin{array}{cc|c}
+                        1 & 1 & -1 \\
+                        3 & 4 & 4 \\
+                        5 & 6 & 0
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cc|c}
+                        1 & 1 & -1 \\
+                        0 & 1 & 7 \\
+                        0 & 1 & 5
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cc|c}
+                        1 & 0 & -8 \\
+                        0 & 1 & 7 \\
+                        0 & 0 & -2
+                    \end{array}
+                \right) $ \\\\
+                拡大係数行列の階数は$3$、係数行列の階数は$2$なので、両者は一致せず、解を持たない。
+
+            \item[(2)]
+                $ \left\{
+                    \begin{array}{l}
+                        x + y - z = 1 \\
+                        -3x - 2y = -2 \\
+                        6x - 2z = 7
+                    \end{array}
+                \right. $ \\\\
+                拡大係数行列を簡約化する。\\\\
+                $ \left(
+                    \begin{array}{ccc|c}
+                        1 & 1 & -1 & 1 \\
+                        -3 & -2 & 0 & -2 \\
+                        6 & 0 & -2 & 7
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & 1 & -1 & 1 \\
+                        0 & 1 & -3 & 1 \\
+                        0 & -6 & 4 & 1
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 2 & 0 \\
+                        0 & 1 & -3 & 1 \\
+                        0 & 0 & -14 & 7
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 2 & 0 \\
+                        0 & 1 & -3 & 1 \\
+                        0 & 0 & 1 & -\frac{1}{2}
+                    \end{array}
+                \right) \\
+                \longleftrightarrow
+                \left(
+                    \begin{array}{ccc|c}
+                        1 & 0 & 0 & 1 \\
+                        0 & 1 & 0 & -\frac{1}{2} \\
+                        0 & 0 & 1 & -\frac{1}{2}
+                    \end{array}
+                \right) $ \\\\
+                連立方程式に戻すと、
+                $ \left\{
+                    \begin{array}{l}
+                        x = 1 \\
+                        y = -\frac{1}{2} \\
+                        z = -\frac{1}{2}
+                    \end{array}
+                \right. $
+
+            \item[(3)]
+                $ \left\{
+                    \begin{array}{l}
+                        x + 2y + 3z + 4w = 3 \\
+                        -x + z + 2w = -1 \\
+                        3x - y - 5z - 9w = 2
+                    \end{array}
+                \right. $ \\\\
+                拡大係数行列を簡約化する。\\\\
+                $ \left(
+                    \begin{array}{cccc|c}
+                        1 & 2 & 3 & 4 & 3 \\
+                        -1 & 0 & 1 & 2 & -1 \\
+                        3 & -1 & -5 & -9 & 2
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cccc|c}
+                        1 & 2 & 3 & 4 & 3 \\
+                        0 & 2 & 4 & 6 & 2 \\
+                        0 & -7 & -14 & -21 & -7
+                    \end{array}
+                \right)
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cccc|c}
+                        1 & 2 & 3 & 4 & 3 \\
+                        0 & 1 & 2 & 3 & 1 \\
+                        0 & 1 & 2 & 3 & 1
+                    \end{array}
+                \right) \\\\
+                \longleftrightarrow
+                \left(
+                    \begin{array}{cccc|c}
+                        1 & 0 & -1 & -2 & 1 \\
+                        0 & 1 & 2 & 3 & 1 \\
+                        0 & 0 & 0 & 0 & 0
+                    \end{array}
+                \right) $ \\\\
+                連立方程式に戻すと、
+                $ \left\{
+                    \begin{array}{l}
+                        x - z - 2w = 1 \\
+                        y + 2z + 3w = 1
+                    \end{array}
+                \right. $ \\\\
+                $z, w$ を $s, t \in \mathbb{R}$ とおくと、
+                $ \left\{
+                    \begin{array}{l}
+                        x = s + 2w + 1 \\
+                        y = 2s + 3w + 1 \\
+                        z = s \\
+                        w = t
+                    \end{array}
+                \right.
+                (s, t \in \mathbb{R}) $
+
+        \end{spacing}
+    \end{description}
+
+    \section*{[$+\alpha$]}
+    問題$4(2)$の連立方程式を一般の整数$l$に対して解いて下さい。
+
+    $ \left\{
+        \begin{array}{l}
+            x + y - z = 1 \\
+            -3x - 2y + lz = -2 \\
+            6x + ly - 2z = 7
+        \end{array}
+    \right. $ \\\\
+    拡大係数行列を簡約化する。\\\\
+        $ \left(
+            \begin{array}{ccc|c}
+                1 & 1 & -1 & 1 \\
+                -3 & -2 & l & -2 \\
+                6 & l & -2 & 7
+            \end{array}
+        \right)
+        \longleftrightarrow
+        \left(
+            \begin{array}{ccc|c}
+                1 & 1 & -1 & 1 \\
+                0 & 1 & l-3 & 1 \\
+                0 & l-6 & 4 & 1
+            \end{array}
+        \right)
+        \longleftrightarrow
+        \left(
+            \begin{array}{ccc|c}
+                1 & 0 & -l+2 & 0 \\
+                0 & 1 & l-3 & 1 \\
+                0 & 0 & -l^2+9l-14 & -l+5
+            \end{array}
+        \right) \\\\
+        \longleftrightarrow
+        \left(
+            \begin{array}{ccc|c}
+                1 & 0 & -l+2 & 0 \\
+                0 & 1 & l-3 & 1 \\
+                0 & 0 & l^2-9l+14 & l-5
+            \end{array}
+        \right) $ \\\\
+        連立方程式に戻すと、
+        $ \left\{
+            \begin{array}{l}
+                x + (-l + 2)z = 0 \\
+                y + (l - 3)z = 1 \\
+                (l^2-9l+14)z = l - 5
+            \end{array}
+        \right. $
+
+        \begin{description}
+            \setlength{\itemsep}{0.5cm}
+            \begin{spacing}{1.2}
+
+                \item[●$ l = 2, 7 $ の時]
+                    $ \left\{
+                        \begin{array}{l}
+                            x + (-l + 2)z = 0 \\
+                            y + (l - 3)z = 1 \\
+                            0 = l - 5
+                        \end{array}
+                    \right. $ \\\\
+                    拡大係数行列の階数は$3$、係数行列の階数は$2$となるので、両者は一致せず、解を持たない。
+
+                \item[●$ l \neq 2, 7 $ の時]
+                    $ \left\{
+                        \begin{array}{l}
+                            x - lz + 2z = 0 \\
+                            y + lz - 3z = 1 \\
+                            l^2z - 9lz + 14z = l - 5
+                        \end{array}
+                    \right. $ \\\\
+                    $ x - lz + 2z = 0 $を$l$について解くと、\\
+                    $ lz = x + 2z \\
+                    l = \frac{x}{z} + 2 $
+
+            \end{spacing}
+        \end{description}
+
+
 
 \end{document}
