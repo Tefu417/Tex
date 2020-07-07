@@ -1,0 +1,194 @@
+\documentclass[fleqn]{jsarticle}
+\setlength{\headsep}{15truemm}
+
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{nccmath}
+\usepackage{type1cm}
+\usepackage{multicol}
+% \usepackage{emath}
+% \usepackage{emathPs}
+
+\title{\vspace{-50mm} 基礎数理演習課題9}
+\author{21716070 縫嶋慧深}
+
+\begin{document}
+
+	\maketitle
+
+    \section*{0.1}
+    次の値を求めて下さい。
+
+    \begin{description}
+        \setlength{\itemsep}{0.5cm}
+
+        \begin{multicols}{3}
+
+            \item[(1)]
+                $ \sin^{-1}{\left(-\cfrac{1}{\sqrt{2}}\right)} $ \\
+                $ \sin^{-1}{-\cfrac{1}{\sqrt{2}}} = -\cfrac{\pi}{4} $
+
+            \item[(2)]
+                $ \cos^{-1}{\left(-\cfrac{\sqrt{3}}{2}\right)} $ \\
+                $ \cos^{-1}{\left(-\cfrac{\sqrt{3}}{2}\right)} = \cfrac{5\pi}{6} $
+
+            \item[(3)]
+                $ \tan^{-1}{0} $ \\
+                $ \tan^{-1}{0} = 0 $
+
+        \end{multicols}
+
+    \end{description}
+
+
+    \vspace{-5mm} \section*{0.2}
+    次の関数の導関数を求めて下さい。
+
+    \begin{description}
+        \setlength{\itemsep}{0.5cm}
+
+        \begin{multicols}{2}
+
+            \item[(1)]
+                \begin{flalign*}
+                    & \hspace*{-14mm} f(x) = \cos{x}\cos^{-1}{x} \\
+                    & \hspace*{-14mm} f^{\prime}(x) = -\sin{x} \cdot \cos^{-1}{x} + \cos{x} \cdot \left(-\cfrac{1}{\sqrt{1-x^2}}\right) \\
+                    & \hspace{-6mm} = -\sin{x}\cos^{-1}{x} - \cfrac{\cos{x}}{\sqrt{1-x^2}}
+                \end{flalign*}
+
+
+            \item[(2)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} f(x) = \cfrac{\tan^{-1}{x}}{1 + x^2} \\
+                    & \hspace*{-10mm} f^{\prime}(x) = \cfrac{(1 + x^2)\cdot\frac{1}{1 + x^2} - \tan^{-1}{x}\cdot2x}{(1 + x^2)^2} \\
+                    & \hspace{-2mm} = \cfrac{1 - 2x\tan^{-1}{x}}{(1 + x^2)^2}
+                \end{flalign*}
+
+        \end{multicols}
+
+        \begin{multicols}{2}
+
+            \item[(3)]
+                $ f(x) = \sqrt{x^3 + 1} $ \\
+                $ f^{\prime}(x) = \cfrac{3x^2}{2\sqrt{x^3 + 1}} $
+
+
+            \item[(4)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} f(x) = x\sin^3{x} \\
+                    & \hspace*{-10mm} f^{\prime}(x) = \sin^3{x} + x\cdot3\sin^2{x}\cos{x} \\
+                    & \hspace{-2mm} = \sin^2{x}(\sin{x} + 3x\cos{x})
+                \end{flalign*}
+
+        \end{multicols}
+
+        \begin{multicols}{2}
+
+            \item[(5)]
+                $ f(x) = x^{\frac{1}{x}} \hspace{2ex} (x > 0) $ \\
+                $ y = x^{\frac{1}{x}} $ と置く。 \\
+                両辺の自然対数を取ると、 \\
+                $ \hspace{4ex} log{y} = log{x^{\frac{1}{x}}} \\
+                \hspace{8ex} = \cfrac{log{x}}{x} $ \\
+                両辺を$x$で微分すると、 \\
+                $ \hspace{4ex} \cfrac{y^{\prime}}{y} = \cfrac{1 - log{x}}{x^2} \\
+                \hspace{4ex} y^{\prime} = y \cdot \cfrac{1 - log{x}}{x^2} \\
+                \hspace{6ex} = x^{\frac{1}{x}} \left(\cfrac{1 - log{x}}{x^2}\right) $ \\
+                \vspace{20mm}
+
+            \item[(6)]
+                $ f(x) = (2x + 3)^x \hspace{2ex}  (x > -2) $ \\
+                $ y = (2x + 3)^x $ と置く。 \\
+                両辺の自然対数を取ると、 \\
+                $ \hspace{4ex} log{y} = log{(2x + 3)^x} \\
+                \hspace{8ex} = xlog{(2x + 3)} $ \\
+                両辺を$x$で微分すると、 \\
+                $ \hspace{4ex} \cfrac{y^{\prime}}{y} = log{(2x + 3)} + x\cdot\cfrac{2}{2x + 3} \\
+                \hspace{6ex} = log{(2x + 3)} + \cfrac{2x}{2x + 3} \\
+                \hspace{4ex} y^{\prime} = y \cdot \left\{log{(2x + 3)} + \cfrac{2x}{2x + 3}\right\} \\
+                \hspace{6ex} = (2x + 3)^x \left\{log{(2x + 3)} + \cfrac{2x}{2x + 3}\right\} $ \\
+
+        \end{multicols}
+
+    \end{description}
+
+    \section*{1}
+    次の関数を$2$次導関数まで求め、極値を求めて下さい。また、変曲点を求めて下さい。
+
+    \begin{description}
+        \setlength{\itemsep}{0.5cm}
+
+        \begin{multicols}{2}
+
+            \item[(1)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} f(x) = x^3 - 3x^2 + 4 \\
+                    & \hspace*{-10mm} f^{\prime}(x) = 3x^2 - 6x = 3x(x - 2) \\
+                    & \hspace*{-10mm} f^{\prime\prime}(x) = 6x - 6 = 6(x - 1) \\
+                    & \hspace*{-10mm} f^{\prime}(x) \geq 0 \ \Leftrightarrow \ 3x(x - 2) \geq 0 \\
+                    & \hspace*{5mm} \Leftrightarrow \ x \leq 0, 2 \leq x \\
+                    & \hspace*{-10mm} f^{\prime\prime}(x) \geq 0 \ \Leftrightarrow \ 6(x - 1) \geq 0 \\
+                    & \hspace*{5mm} \Leftrightarrow \ x \geq 1
+                \end{flalign*}
+                \linebreak
+
+            $ \begin{array}{c||c|c|c|c|c|c|c}
+                \hline
+                x & \cdots & 0 & \cdots & 1 & \cdots & 2 & \cdots \\
+                \hline
+                f^{\prime}(x) & + & 0 & - & - & - & 0 & + \\
+                \hline
+                f^{\prime\prime}(x) & - & - & - & 0 & + & + & + \\
+                \hline
+                f(x) & \ & 4 & \ & 2 & \ & 0 & \
+            \end{array} $
+
+            $ \left\{
+                \begin{array}{l}
+                    極大値 : f(0) = 4 \\
+                    極小値 : f(2) = 0 \\
+                    変曲点 : (1, \ 2)
+                \end{array}
+            \right. $
+
+        \end{multicols}
+
+        \begin{multicols}{2}
+
+            \item[(2)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} f(x) = x\log{x} \\
+                    & \hspace*{-10mm} 真数条件より、x > 0 \\
+                    & \hspace*{-10mm} f^{\prime}(x) = \log{x} + 1 \\
+                    & \hspace*{-10mm} f^{\prime\prime}(x) = \cfrac{1}{x} \\
+                    & \hspace*{-10mm} f^{\prime}(x) \geq 0 \ \Leftrightarrow \ \log{x} \leq -1 \\
+                    & \hspace*{5mm} \Leftrightarrow \ x \geq \cfrac{1}{e} \\
+                    & \hspace*{-10mm} f^{\prime\prime}(x) \geq 0 \ \Leftrightarrow \ \cfrac{1}{x} \geq 0 \\
+                    & \hspace*{5mm} \Leftrightarrow \ x > 0
+                \end{flalign*}
+                \linebreak
+
+            $ \begin{array}{c||c|c|c|c|c}
+                \hline
+                x & (0) & \cdots & \frac{1}{e} & \cdots & (\infty) \\
+                \hline
+                f^{\prime}(x) & \slash & - & 0 & + & \ \\
+                \hline
+                f^{\prime\prime}(x) & \slash & + & + & + & \ \\
+                \hline
+                f(x) & (0) & \ & -\frac{1}{e} & \ & (\infty)
+            \end{array} $
+
+            $ \left\{
+                    \begin{array}{l}
+                        極大値 : なし \\
+                        極小値 : f\left(\frac{1}{e}\right) = -\frac{1}{e} \\
+                        変曲点 : なし
+                    \end{array}
+            \right. $
+
+        \end{multicols}
+
+    \end{description}
+
+\end{document}
