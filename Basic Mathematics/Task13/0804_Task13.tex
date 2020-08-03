@@ -1,0 +1,266 @@
+\documentclass[fleqn]{jsarticle}
+\setlength{\headsep}{0truemm}
+\addtolength{\footskip}{20mm}
+
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{nccmath}
+\usepackage{type1cm}
+\usepackage{multicol}
+
+\title{基礎数理演習課題13}
+\author{21716070 縫嶋慧深}
+
+\begin{document}
+
+	\maketitle
+
+    \section*{1}
+    次の関数を微分して下さい。
+
+    \begin{description}
+		\setlength{\itemsep}{0.8cm}
+
+            \begin{multicols}{2}
+
+                \item[(1)]
+                    $ f(x) = x^2 + 2^x + log_2{x} $
+                    \begin{flalign*}
+                        & \hspace*{-6mm} f(x) = x^2 + 2^x + \cfrac{log{x}}{log{2}} \\
+                        & \hspace*{-6mm} f^{\prime}(x) = 2x + 2^xlog{2} + \cfrac{1}{xlog{2}}
+                    \end{flalign*}
+
+                \item[(2)]
+                    $ f(x) = \tan{x}\sin^{-1}{x} $
+                    \begin{flalign*}
+                        & \hspace*{-6mm} f^{\prime}(x) = (\sin^{-1}{x})^{\prime} \cdot \tan{x} + \sin^{-1}{x} \cdot (\tan{x})^{\prime} \\
+                        & \hspace*{2mm} = \cfrac{1}{\sqrt{1-x^2}} \cdot \tan{x} + \sin^{-1}{x} \cdot \cfrac{1}{\cos^2{x}} \\
+                        & \hspace*{2mm} = \cfrac{\tan{x}}{\sqrt{1-x^2}} + \cfrac{\sin^{-1}{x}}{\cos^2{x}}
+                    \end{flalign*}
+
+            \end{multicols}
+
+            \begin{multicols}{2}
+
+                \item[(3)]
+                    $ f(x) = \cfrac{1-\cos{x}}{x^2} $
+                    \begin{flalign*}
+                        & \hspace*{-6mm} f(x) = \sin{x}\cdot\cfrac{1}{x^2} + (1-\cos{x})\cdot\left(-\cfrac{2}{x^3}\right) \\
+                        & \hspace*{-6mm} f^{\prime}(x) = \cfrac{x\sin{x}+2\cos{x}-2}{x^3}
+                    \end{flalign*}
+
+                \item[(4)]
+                    $ f(x) = \sqrt{2e^x+1} $
+                    \begin{flalign*}
+                        & \hspace*{-6mm} f^{\prime}(x) = \cfrac{\left(2e^x+1\right)^{\prime}}{2\sqrt{2e^x+1}} \\
+                        & \hspace*{2mm} = \cfrac{e^x}{\sqrt{2e^x+1}}
+                    \end{flalign*}
+
+            \end{multicols}
+
+            \begin{multicols}{2}
+
+                \item[(5)]
+                    $ f(x) = \cfrac{1-\cos{x}}{x^2} $
+                    \begin{flalign*}
+                        & \hspace*{-6mm} f(x) = -\cfrac{(x^2)^{\prime}}{\sqrt{1-x^4}} \\
+                        & \hspace*{2mm} = -\cfrac{2x}{\sqrt{1-x^4}}
+                    \end{flalign*}
+
+                \item[(6)]
+                    $ f(x) = e^{2x}\sin{3x} $
+                    \begin{flalign*}
+                        & \hspace*{-6mm} f^{\prime}(x) = \left(e^{2x}\right)^{\prime}\cdot\sin{3x} + e^{2x}\cdot(\sin{3x})^{\prime} \\
+                        & \hspace*{2mm} = e^{2x}\left(2\sin{3x} + 3\cos{3x}\right) \\
+                    \end{flalign*}
+
+            \end{multicols}
+
+            \item[(7)]
+                $ f(x) = x^{\cos{x}} \hspace*{4mm} (x>0) $
+                \begin{flalign*}
+                    & \hspace*{-6mm} 両辺の自然対数をとる \\
+                    & \hspace*{-6mm} log{f(x)} = log{x^{\cos{x}}} \\
+                    & \hspace*{-6mm} log{f(x)} = \cos{x}log{x} \\
+                    & \hspace*{-6mm} 両辺を微分する \\
+                    & \hspace*{-6mm} \cfrac{f^{\prime}(x)}{f(x)} = -\sin{x}log{x} + \cfrac{\cos{x}}{x} \\
+                    & \hspace*{-6mm} f^{\prime}(x) = x^{\cos{x}}\left(-\sin{x}log{x} + \cfrac{\cos{x}}{x}\right) \\
+                    & \hspace*{2mm} = x^{\cos{x}-1}\left(-x\sin{x}log{x} + \cos{x}\right)
+                \end{flalign*}
+
+    \end{description}
+
+    \section*{2}
+    次の値を求めて下さい。
+
+    \begin{description}
+        \setlength{\itemsep}{0.5cm}
+
+        \begin{multicols}{2}
+
+            \item[(1)]
+                $ \sin^{-1}{\cfrac{\sqrt{3}}{2}} $ \\
+                $ \sin^{-1}{\cfrac{\sqrt{3}}{2}} = \cfrac{\pi}{3} $
+
+            \item[(2)]
+                $ \cos^{-1}{\left(-\cfrac{1}{\sqrt{2}}\right)} $ \\
+                $ \cos^{-1}{\left(-\cfrac{1}{\sqrt{2}}\right)} = \cfrac{3\pi}{4} $
+
+        \end{multicols}
+
+        \item[(3)]
+            $ \tan^{-1}{\left(-\cfrac{1}{\sqrt{3}}\right)} $ \\
+            $ \tan^{-1}{\left(-\cfrac{1}{\sqrt{3}}\right)} = -\cfrac{\pi}{6} $
+
+    \end{description}
+
+    \vspace{-5mm} \section*{3}
+    次の不定積分を求めて下さい。(積分定数として$C, C_1, C_2, \cdots $を断らずに用いてよい)
+
+    \begin{description}
+        \setlength{\itemsep}{0.5cm}
+
+        \begin{multicols}{2}
+
+            \item[(1)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} \int \sqrt{x}\left(x-1+\cfrac{1}{x}\right) \ dx \cdots (*) \\
+                    & \hspace*{-10mm} u = \sqrt{x} とすると \\
+                    & \hspace*{-10mm} (*) = 2\int (u^4-u^2+1) \ du \\
+                    & \hspace*{-6mm} = \cfrac{2u^5}{5} - \cfrac{2u^3}{3} + 2u + C \\
+                    & \hspace*{-6mm} = \cfrac{2x^2\sqrt{x}}{5} - \cfrac{2x\sqrt{x}}{3} + 2\sqrt{x} + C \\
+                    & \hspace*{-6mm} = \cfrac{2}{15}\sqrt{x}(3x^2-5x+15) + C
+                \end{flalign*}
+
+
+            \item[(2)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} \int \cfrac{1}{x}log{x} \ dx \cdots (*) \\
+                    & \hspace*{-10mm} u = log{x}とすると \\
+                    & \hspace*{-10mm} (*) = \int u du \\
+                    & \hspace*{-6mm} = \cfrac{u^2}{2} + C_1 \\
+                    & \hspace*{-6mm} = \cfrac{log^2{x}}{2} + C_1
+                \end{flalign*}
+
+        \end{multicols}
+
+        \begin{multicols}{2}
+
+            \item[(3)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} \int x^2\sin{x} \ dx \\
+                    & \hspace*{-6mm} = -x^2\cos{x} + 2\int x\cos{x} \ dx + C_2 \\
+                    & \hspace*{-6mm} = -x^2\cos{x} + 2x\sin{x} - 2\int \sin{x} \ dx + C_2 \\
+                    & \hspace*{-6mm} = -x^2\cos{x} + 2x\sin{x} + 2\cos{x} + C_2 \\
+                    & \hspace*{-6mm} = 2x\sin{x} + (2-x^2)\cos{x} + C_2
+                \end{flalign*}
+
+            \item[(4)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} \int\cfrac{e^x}{\sqrt{4-e^{2x}}} \ dx \cdots (*) \\
+                    & \hspace*{-10mm} u = e^x とすると \\
+                    & \hspace*{-10mm} (*) = \int \cfrac{1}{\sqrt{4-u^2}} \ du \\
+                    & \hspace*{-6mm} = \int \cfrac{1}{2\sqrt{1-\cfrac{u^2}{4}}} \ du \\
+                    & \hspace*{-6mm} = \cfrac{1}{2}\int \cfrac{1}{\sqrt{1-\cfrac{u^2}{4}}} \ du \cdots (**) \\
+                    & \hspace*{-10mm} s = \cfrac{u}{2} とすると \\
+                    & \hspace*{-10mm} (**) = \int \cfrac{1}{\sqrt{1-s^2}} \ ds \\
+                    & \hspace*{-4mm} =
+                \end{flalign*}
+
+        \end{multicols}
+
+        \item[(5)]
+            \begin{flalign*}
+                & \hspace*{-10mm} \int \tan^{-1}{x} \ dx \\
+                & \hspace*{2mm} = x\tan^{-1}{x} - \int \cfrac{x}{x^2 + 1} \ dx \cdots (*) \\
+                & \hspace*{2mm} u = x^2 + 1  とすると \\
+                & \hspace*{2mm} (*) = x\tan^{-1}{x} - \cfrac{1}{2} \int \cfrac{1}{u} \ du \\
+                & \hspace*{6.5mm} = x\tan^{-1}{x} - \cfrac{log{u}}{2} + C_4 \\
+                & \hspace*{6.5mm} = x\tan^{-1}{x} - \cfrac{log{(x^2  + 1)}}{2} + C_4
+            \end{flalign*}
+
+    \end{description}
+
+    \newpage
+
+    \section*{1}
+    次の不定積分を求めて下さい。(積分定数として$C, C_1, C_2, \cdots $を断らずに用いてよい)
+
+    \begin{description}
+        \setlength{\itemsep}{0.5cm}
+
+        \begin{multicols}{2}
+
+            \item[(1)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} \int \cfrac{x^3 + 2x^2 + 4x + 6}{x^2 + 4} \ dx \\
+                    & \hspace*{-2mm} = \int \left(-\cfrac{2}{x^2 + 4} + x + 2 \right) \ dx \\
+                    & \hspace*{-2mm} = -2\int \cfrac{1}{x^2 + 4} \ dx + \int x \ dx + 2\int 1 \ dx \\
+                    & \hspace*{-2mm} = -\tan^{-1}{\cfrac{x}{2}} + \cfrac{x^2}{2} + 2x + C \\
+                    & \hspace*{-2mm} = \cfrac{x}{2}(x + 4) - \tan^{-1}{\cfrac{x}{2}} + C
+                \end{flalign*}
+
+            \item[(2)]
+                \begin{flalign*}
+                    & \hspace*{-10mm} \int \cfrac{x^2 + 2x + 1}{x^2 - 2x + 2} \ dx \\
+                    & \hspace*{-2mm} = \int \left(\cfrac{4x - 1}{x^2 - 2x + 2} + 1\right) \ dx \\
+                    & \hspace*{-2mm} = \int \cfrac{4x - 1}{x^2 - 2x + 2} \ dx + \int 1 \ dx \\
+                    & \hspace*{-2mm} = \int \left(\cfrac{2(2x-2)}{x^2-2x+2} + \cfrac{3}{x^2-2x+2} \right) \ dx + x + C_1 \\
+                    & \hspace*{-2mm} = 2\int \cfrac{2x-2}{x^2-2x+2} \ dx + 3\int \cfrac{1}{x^2-2x+2} \ dx + x + C_1 \cdots (*) \\
+                    & \hspace*{-2mm} u = x^2 - 2x + 2 とすると \\
+                    & \hspace*{-2mm} (*) = 2log{u} + 3\int \cfrac{1}{(x-1)^2 + 1} \ dx + x + C_1 \cdots (**) \\
+                    & \hspace*{-2mm} t = x - 1 とすると \\
+                    & \hspace*{-2mm} (**) = 2log{(x^2 - 2x + 2)} + 3\int \cfrac{1}{t^2 + 1}\ dt + x + C_1 \\
+                    & \hspace*{4.5mm} = 2log{(x^2 - 2x + 2)} - 3\tan^{-1}{t} + x + C_1 \\
+                    & \hspace*{4.5mm} = 2log{(x^2 - 2x + 2)} - 3\tan^{-1}{(1-x)} + x + C_1
+                \end{flalign*}
+
+        \end{multicols}
+
+        \item[(3)]
+            \begin{flalign*}
+                & \hspace*{-10mm} \int\cfrac{2}{(x-1)(x+1)^2} \ dx \\
+                & \hspace*{-2mm} = 2\int \left(-\cfrac{1}{4(x+1)} - \cfrac{1}{2(x+1)^2} + \cfrac{1}{4(x-1)}\right) \ dx \\
+                & \hspace*{-2mm} = -\cfrac{1}{2}\int\cfrac{1}{x+1}\ dx - \int\cfrac{1}{(x+1)^2}\ dx + \cfrac{1}{2}\int\cfrac{1}{x-1}\ dx \cdots (*) \\
+                & \hspace*{-2mm} u = x+1, t = x-1 とすると \\
+                & \hspace*{-2mm} (*) = -\cfrac{1}{2}\int\cfrac{1}{u}\ du - \int\cfrac{1}{u^2}\ du + \cfrac{1}{2}\int\cfrac{1}{t}\ dt \\
+                & \hspace*{3mm} = -\cfrac{log{u}}{2} + \cfrac{1}{u} + \cfrac{log{t}}{2} + C_2 \\
+                & \hspace*{3mm} = -\cfrac{log{(x+1)}}{2} + \cfrac{1}{x+1} + \cfrac{log{(x-1)}}{2} + C_2 \\
+                & \hspace*{3mm} = \cfrac{1}{2}\left(\cfrac{2}{x+1} + log{(x-1)} - log{(x+1)} \right) + C_2
+            \end{flalign*}
+
+        \item[(4)]
+            \begin{flalign*}
+                & \hspace*{-10mm} \int\cfrac{1}{2x^2-x} \ dx \\
+                & \hspace*{-2mm} = \int\cfrac{1}{\left(\sqrt{2}x - \cfrac{1}{2\sqrt{2}}\right)^2 - \cfrac{1}{8}} \ dx \cdots (*) \\
+                & \hspace*{-2mm} u = \sqrt{2}x - \cfrac{1}{2\sqrt{2}} とすると \\
+                & \hspace*{-2mm} (*) = \cfrac{1}{\sqrt{2}} \int \cfrac{1}{u^2 - \cfrac{1}{8}}\ du \\
+                & \hspace*{3mm} = \cfrac{1}{\sqrt{2}} \int \cfrac{8}{8u^2 - 1}\ du \\
+                & \hspace*{3mm} = 4\sqrt{2} \int \cfrac{1}{8u^2 - 1}\ du \\
+                & \hspace*{3mm} = -4\sqrt{2} \int \cfrac{1}{1 - 8u^2}\ du \cdots (**) \\
+                & \hspace*{-2mm} t = 2\sqrt{2}u とすると \\
+                & \hspace*{-2mm} (**) = -2\int\cfrac{1}{1-t^2}\ dt \\
+                & \hspace*{4.5mm} = -2\tanh^{-1}{t} + C_3 \\
+                & \hspace*{4.5mm} = log{(1-t)} - log{(1+t)} + C_3 \\
+                & \hspace*{4.5mm} = log{\left(1-2\sqrt{2}u\right)} - log{\left(1+2\sqrt{2}u\right)} + C_3 \\
+                & \hspace*{4.5mm} = log{\left(1-2\sqrt{2}\left(\sqrt{2}x - \cfrac{1}{2\sqrt{2}}\right)\right)} - log{\left(1+2\sqrt{2}\left(\sqrt{2}x - \cfrac{1}{2\sqrt{2}}\right)\right)} + C_3 \\
+                & \hspace*{4.5mm} = log{(2-4x)} - log{4x} + C_3 \\
+                & \hspace*{4.5mm} = log{(1-2x)} - log{2x} + C_3
+            \end{flalign*}
+
+        \item[(5)]
+            \begin{flalign*}
+                & \hspace*{-10mm} \int\cfrac{4}{(x-1)(x^2+1)}\ dx \\
+                & \hspace*{-2mm} = 4\int\left(\cfrac{-x-1}{2(x^2+1)} + \cfrac{1}{2(x-1)}\right)\ dx \\
+                & \hspace*{-2mm} = 2\int\cfrac{-x-1}{x^2+1}\ dx + 2\int\cfrac{1}{x-1}\ dx \\
+                & \hspace*{-2mm} = 2\int\left(-\cfrac{x}{x^2+1}-\cfrac{1}{x^2+1}\right)\ dx + 2log{(x-1)} + C_4 \\
+                & \hspace*{-2mm} = -2\int\cfrac{x}{x^2+1}\ dx - 2\int\cfrac{1}{x^2+1}\ dx + 2log{(x-1)} + C_4 \cdots (*) \\
+                & \hspace*{-2mm} u = x^2 + 1 とすると \\
+                & \hspace*{-2mm} (*) = -\int\cfrac{1}{u}\ du - 2\tan^{-1}{x} + 2log{(x-1)} + C_4 \\
+                & \hspace*{3mm} = -log{u} - 2\tan^{-1}{x} + 2log{(x-1)} + C_4 \\
+                & \hspace*{3mm} = -log{(x^2+1)} - 2\tan^{-1}{x} + 2log{(x-1)} + C_4
+            \end{flalign*}
+
+    \end{description}
+
+\end{document}
