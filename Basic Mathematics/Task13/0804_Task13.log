@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.euc) (TeX Live 2019) (preloaded format=platex 2020.5.11)  3 AUG 2020 12:50
+This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.euc) (TeX Live 2019) (preloaded format=platex 2020.5.11)  5 AUG 2020 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -178,63 +178,80 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 ) (./0804_Task13.aux)
 \openout1 = `0804_Task13.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 16.
+(Font)              scaled to size 16.60605pt on input line 71.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 16.
+(Font)              scaled to size 16.60605pt on input line 71.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 16.
+(Font)              scaled to size 11.53198pt on input line 71.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 16.
+(Font)              scaled to size 11.53198pt on input line 71.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 16.
+(Font)              scaled to size 5.76599pt on input line 71.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
+(Font)              scaled to size 13.83836pt on input line 73.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
+(Font)              scaled to size 13.83836pt on input line 73.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
+(Font)              scaled to size 13.83836pt on input line 73.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
+(Font)              scaled to size 13.83836pt on input line 73.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 26.
+(Font)              scaled to size 9.60999pt on input line 81.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 26.
+(Font)              scaled to size 9.60999pt on input line 81.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 27.
+(Font)              scaled to size 6.72699pt on input line 82.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 27.
+(Font)              scaled to size 4.805pt on input line 82.
  [1
 
-] [2] [3]
-Overfull \hbox (82.04027pt too wide) detected at line 216
+] [2]
+Overfull \hbox (63.9998pt too wide) detected at line 269
 []
  []
 
-[4] [5] [6] (./0804_Task13.aux) ) 
+
+Overfull \vbox (22.34183pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (22.34183pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (22.34183pt too high) has occurred while \output is active []
+
+ [3] [4]
+Overfull \hbox (5.03413pt too wide) in paragraph at lines 356--366
+[]$[]$ 
+ []
+
+
+Overfull \vbox (53.18037pt too high) has occurred while \output is active []
+
+ [5] (./0804_Task13.aux) ) 
 Here is how much of TeX's memory you used:
- 1697 strings out of 493223
- 20593 string characters out of 6144415
- 110130 words of memory out of 5000000
- 5708 multiletter control sequences out of 15000+600000
+ 1701 strings out of 493223
+ 20613 string characters out of 6144415
+ 119297 words of memory out of 5000000
+ 5712 multiletter control sequences out of 15000+600000
  17309 words of font info for 78 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,13n,27p,271b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,27p,271b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 0804_Task13.dvi (6 pages, 19648 bytes).
+Output written on 0804_Task13.dvi (5 pages, 21396 bytes).
