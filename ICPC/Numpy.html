@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html
+  lang="ja"
+
+data-admin-domain="//blog.hatena.ne.jp"
+data-admin-origin="https://blog.hatena.ne.jp"
+data-author="arakan_no_boku"
+data-avail-langs="ja en"
+data-blog="arakan-pgm-ai.hatenablog.com"
+data-blog-comments-top-is-new="1"
+data-blog-host="arakan-pgm-ai.hatenablog.com"
+data-blog-is-public="1"
+data-blog-name="&quot;BOKU&quot;のITな日常"
+data-blog-owner="arakan_no_boku"
+data-blog-uri="https://arakan-pgm-ai.hatenablog.com/"
+data-blog-uuid="10328749687188575458"
+data-blogs-uri-base="https://arakan-pgm-ai.hatenablog.com"
+data-brand="hatenablog"
+data-data-layer="{&quot;hatenablog&quot;:{&quot;page_id&quot;:&quot;entry&quot;,&quot;admin&quot;:{},&quot;blog&quot;:{&quot;force_pc_view&quot;:&quot;true&quot;,&quot;disable_ads&quot;:&quot;&quot;,&quot;content_seems_japanese&quot;:&quot;true&quot;,&quot;is_responsive_view&quot;:&quot;true&quot;,&quot;is_sleeping&quot;:&quot;false&quot;,&quot;enable_ads&quot;:&quot;true&quot;,&quot;name&quot;:&quot;\&quot;BOKU\&quot;\u306eIT\u306a\u65e5\u5e38&quot;,&quot;owner_name&quot;:&quot;arakan_no_boku&quot;,&quot;enable_keyword_link&quot;:&quot;true&quot;,&quot;entry_show_footer_related_entries&quot;:&quot;false&quot;,&quot;is_public&quot;:&quot;true&quot;,&quot;uri&quot;:&quot;https://arakan-pgm-ai.hatenablog.com/&quot;,&quot;lang&quot;:&quot;ja&quot;},&quot;pro&quot;:&quot;free&quot;,&quot;permalink_entry&quot;:{&quot;title&quot;:&quot;Numpy\u3067\u826f\u304f\u53c2\u7167\u3059\u308b\u57fa\u672c\u90e8\u5206\u30c1\u30fc\u30c8\u30b7\u30fc\u30c8\u7684\u307e\u3068\u3081&quot;,&quot;uri&quot;:&quot;https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000&quot;,&quot;hour&quot;:&quot;0&quot;,&quot;categories&quot;:&quot;ALL:\u3088\u304f\u53c2\u7167\u3059\u308b\u300c\u307e\u3068\u3081\u300d&quot;,&quot;date&quot;:&quot;2020-03-30&quot;,&quot;author_name&quot;:&quot;arakan_no_boku&quot;},&quot;router_type&quot;:&quot;blogs&quot;,&quot;brand&quot;:&quot;hatenablog&quot;,&quot;analytics&quot;:{&quot;non_sampling_property_id&quot;:&quot;&quot;,&quot;property_id&quot;:&quot;UA-85906402-1&quot;,&quot;brand_property_id&quot;:&quot;&quot;,&quot;separated_property_id&quot;:&quot;UA-29716941-22&quot;}}}"
+data-device="pc"
+data-dont-recommend-pro="false"
+data-global-domain="https://hatenablog.com"
+data-globalheader-color="b"
+data-globalheader-type="pc"
+data-has-touch-view="1"
+data-help-url="https://help.hatenablog.com"
+data-no-suggest-touch-view="1"
+data-page="entry"
+data-parts-domain="https://hatenablog-parts.com"
+data-plus-available=""
+data-pro="false"
+data-router-type="blogs"
+data-sentry-dsn="https://03a33e4781a24cf2885099fed222b56d@sentry.io/1195218"
+data-sentry-environment="production"
+data-sentry-sample-rate="0.1"
+data-static-domain="https://cdn.blog.st-hatena.com"
+data-version="75d6d9469d426c85e74e2949447831a3"
+
+itemscope
+itemtype="http://schema.org/Article"
+
+  data-initial-state="{}"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  
+
+
+
+  
+
+  <meta name="robots" content="max-image-preview:large" />
+
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+  <title>Numpyで良く参照する基本部分チートシート的まとめ - &quot;BOKU&quot;のITな日常</title>
+
+  
+  <link rel="canonical" href="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000"/>
+
+
+
+  
+  
+
+<meta itemprop="name" content="Numpyで良く参照する基本部分チートシート的まとめ - &quot;BOKU&quot;のITな日常"/>
+
+  <meta itemprop="image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20200325/20200325010924.png"/>
+
+
+  <meta property="og:title" content="Numpyで良く参照する基本部分チートシート的まとめ - &quot;BOKU&quot;のITな日常"/>
+<meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000"/>
+
+  <meta property="og:image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20200325/20200325010924.png"/>
+
+<meta property="og:image:alt" content="Numpyで良く参照する基本部分チートシート的まとめ - &quot;BOKU&quot;のITな日常"/>
+    <meta property="og:description" content="Numpyのよく参照しそうな「基本部分」だけを、後で自分が参照しやすいように、まとめてみました。" />
+<meta property="og:site_name" content="&quot;BOKU&quot;のITな日常"/>
+
+  <meta property="article:published_time" content="1585494000" />
+
+    <meta property="article:tag" content="ALL:よく参照する「まとめ」" />
+      <meta name="twitter:card"  content="summary_large_image" />
+    <meta name="twitter:image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20200325/20200325010924.png" />  <meta name="twitter:title" content="Numpyで良く参照する基本部分チートシート的まとめ - &quot;BOKU&quot;のITな日常" />    <meta name="twitter:description" content="Numpyのよく参照しそうな「基本部分」だけを、後で自分が参照しやすいように、まとめてみました。" />  <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+  <meta name="twitter:app:id:iphone" content="583299321" />
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=https%3A%2F%2Farakan-pgm-ai.hatenablog.com%2Fentry%2F2020%2F03%2F30%2F000000" />  <meta name="twitter:site" content="@arakan_boku" />
+  
+    <meta name="description" content="Numpyのよく参照しそうな「基本部分」だけを、後で自分が参照しやすいように、まとめてみました。" />
+    <meta name="google-site-verification" content="Y-7Xc1Xkx7llWxfgpvaAiBLF_QWz892Q02YtCy9r2QI" />
+    <meta name="keywords" content="人工知能　ブロックチェーン　セキュリティ　Python　PHP　django　IT　deeplearning 機械学習　ディープラーニング　SpringBoot　thymeleaf" />
+    <meta name="msvalidate.01" content="645ED3A6E6526AA2D5DEF31F8608358A" />
+
+
+  
+<script
+  id="embed-gtm-data-layer-loader"
+  data-data-layer-page-specific="{&quot;hatenablog&quot;:{&quot;blogs_permalink&quot;:{&quot;is_author_pro&quot;:&quot;false&quot;,&quot;entry_afc_issued&quot;:&quot;false&quot;,&quot;blog_afc_issued&quot;:&quot;false&quot;,&quot;brand_hide_afc&quot;:&quot;false&quot;,&quot;is_blog_sleeping&quot;:&quot;false&quot;,&quot;blog_hide_afc_func&quot;:&quot;false&quot;,&quot;blog_hide_afc_field&quot;:&quot;false&quot;,&quot;has_related_entries_with_elasticsearch&quot;:&quot;false&quot;,&quot;blog_struct_hide_afc&quot;:&quot;false&quot;}}}"
+>
+(function() {
+  function loadDataLayer(elem, attrName) {
+    if (!elem) { return {}; }
+    var json = elem.getAttribute(attrName);
+    if (!json) { return {}; }
+    return JSON.parse(json);
+  }
+
+  var globalVariables = loadDataLayer(
+    document.documentElement,
+    'data-data-layer'
+  );
+  var pageSpecificVariables = loadDataLayer(
+    document.getElementById('embed-gtm-data-layer-loader'),
+    'data-data-layer-page-specific'
+  );
+
+  var variables = [globalVariables, pageSpecificVariables];
+
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+
+  for (var i = 0; i < variables.length; i++) {
+    window.dataLayer.push(variables[i]);
+  }
+})();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4CXTW');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5KM4GFH');</script>
+<!-- End Google Tag Manager -->
+
+
+
+  <link rel="shortcut icon" href="https://arakan-pgm-ai.hatenablog.com/favicon">
+<link rel="apple-touch-icon" href="https://cdn.image.st-hatena.com/image/apple_touch_icon/394949dfbe68e08182b8c7c3ac78dc801f04090e/version=1/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fcustom_blog_icon%2F126019961%2F1514208711960852">
+<link rel="icon" sizes="192x192" href="https://cdn.image.st-hatena.com/image/square/11bf09bddc43c8b6847da7dca5f6b2eea78b556b/backend=imagemagick;height=192;version=1;width=192/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fcustom_blog_icon%2F126019961%2F1514208711960852">
+
+  
+
+<link rel="alternate" type="application/atom+xml" title="Atom" href="https://arakan-pgm-ai.hatenablog.com/feed"/>
+<link rel="alternate" type="application/rss+xml" title="RSS2.0" href="https://arakan-pgm-ai.hatenablog.com/rss"/>
+<link rel="alternate" type="application/json+oembed" href="https://hatenablog.com/oembed?url=https%3A%2F%2Farakan-pgm-ai.hatenablog.com%2Fentry%2F2020%2F03%2F30%2F000000&amp;format=json" title="oEmbed Profile of Numpyで良く参照する基本部分チートシート的まとめ"/>
+<link rel="alternate" type="text/xml+oembed" href="https://hatenablog.com/oembed?url=https%3A%2F%2Farakan-pgm-ai.hatenablog.com%2Fentry%2F2020%2F03%2F30%2F000000&amp;format=xml" title="oEmbed Profile of Numpyで良く参照する基本部分チートシート的まとめ"/>
+  
+  <link rel="author" href="http://www.hatena.ne.jp/arakan_no_boku/">
+
+  
+
+
+  
+    <link rel="stylesheet" type="text/css" href="https://cdn.blog.st-hatena.com/css/blog.css?version=fe7941570b7a5ce31f37838911dced23e63fa1c6&amp;env=production"/>
+
+    
+  <link rel="stylesheet" type="text/css" href="https://usercss.blog.st-hatena.com/blog_style/10328749687188575458/b4f99e2b23bcae90e433742c6698f15fe59dd993"/>
+  
+  
+
+  
+
+  
+<script> </script>
+
+  
+<style>
+  div#google_afc_user,
+  div.google-afc-user-container,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+  
+    <script src="https://cdn.pool.st-hatena.com/valve/valve.js" async></script>
+<script id="test-valve-definition">
+  var valve = window.valve || [];
+
+  valve.push(function(v) {
+    v.config({
+      service: 'blog',
+      content: {
+        result: 'adtrust',
+        documentIds: ["blog:entry:26006613540042370"]
+      }
+    });
+    v.defineDFPSlot({"lazy":"","sizes":[[300,250],[336,280],[468,60],"fluid"],"slotId":"google_afc_user_container_0","unit":"/4374287/blog_user"});
+    v.sealDFPSlots();
+  });
+</script>
+
+  
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5KM4GFH');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+  <body class="page-entry enable-top-editarea enable-bottom-editarea category-ALL:よく参照する「まとめ」">
+    
+
+    <div id="globalheader-container"
+  data-brand="hatenablog"
+  
+  
+  >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <div id="blog-title-content">
+      <h1 id="title"><a href="https://arakan-pgm-ai.hatenablog.com/">&quot;BOKU&quot;のITな日常</a></h1>
+      
+        <h2 id="blog-description">62歳・文系システムエンジニアの”BOKU”は日々勉強を楽しんでます</h2>
+      
+    </div>
+  </div>
+</header>
+
+        
+  <div id="top-editarea">
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KM4GFH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8381216028300373",
+          enable_page_level_ads: true
+     });
+</script>
+
+  </div>
+
+
+        
+            <div id="top-box">
+    <div class="breadcrumb" data-test-id="breadcrumb">
+      <div class="breadcrumb-inner">
+        <a class="breadcrumb-link" href="https://arakan-pgm-ai.hatenablog.com/"><span>トップ</span></a>          <span class="breadcrumb-gt">&gt;</span>          <span class="breadcrumb-child">            <a class="breadcrumb-child-link" href="https://arakan-pgm-ai.hatenablog.com/archive/category/ALL%3A%E3%82%88%E3%81%8F%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%80%8C%E3%81%BE%E3%81%A8%E3%82%81%E3%80%8D"><span>ALL:よく参照する「まとめ」</span></a>          </span>            <span class="breadcrumb-gt">&gt;</span>          <span class="breadcrumb-child">            <span>Numpyで良く参照する基本部分チートシート的まとめ</span>          </span>      </div>
+    </div>
+  </div>
+  <script type="application/ld+json" class="test-breadcrumb-json-ld">
+    {"itemListElement":[{"@type":"ListItem","item":{"name":"トップ","@id":"https://arakan-pgm-ai.hatenablog.com/"},"position":1},{"item":{"name":"ALL:よく参照する「まとめ」","@id":"https://arakan-pgm-ai.hatenablog.com/archive/category/ALL%3A%E3%82%88%E3%81%8F%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%80%8C%E3%81%BE%E3%81%A8%E3%82%81%E3%80%8D"},"position":2,"@type":"ListItem"}],"@context":"http://schema.org","@type":"BreadcrumbList"}
+  </script>
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+
+
+          
+  
+  <!-- google_ad_section_start -->
+  <!-- rakuten_ad_target_begin -->
+  
+  
+  
+
+  
+
+  
+    
+      
+        <article class="entry hentry test-hentry js-entry-article date-first autopagerize_page_element chars-8800 words-1200 mode-html entry-odd" id="entry-26006613540042370" data-keyword-campaign="" data-uuid="26006613540042370" data-publication-type="entry">
+  <div class="entry-inner">
+    <header class="entry-header">
+  
+    <div class="date entry-date first">
+    <a href="https://arakan-pgm-ai.hatenablog.com/archive/2020/03/30" rel="nofollow">
+      <time pubdate datetime="2020-03-29T15:00:00Z" title="2020-03-29T15:00:00Z">
+        <span class="date-year">2020</span><span class="hyphen">-</span><span class="date-month">03</span><span class="hyphen">-</span><span class="date-day">30</span>
+      </time>
+    </a>
+  </div>
+  <h1 class="entry-title">
+  <a href="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000" class="entry-title-link bookmark">Numpyで良く参照する基本部分チートシート的まとめ</a>
+</h1>
+
+  
+  
+
+  <div class="entry-categories categories">
+    
+    <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/ALL%3A%E3%82%88%E3%81%8F%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%80%8C%E3%81%BE%E3%81%A8%E3%82%81%E3%80%8D" class="entry-category-link category-ALL:よく参照する「まとめ」">ALL:よく参照する「まとめ」</a>
+    
+  </div>
+
+
+  
+
+  
+
+</header>
+
+    
+
+
+    <div class="entry-content">
+  
+    <p>Numpyのよく参照しそうな「基本部分」だけを、後で自分が参照しやすいように、まとめておきます。</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20200325/20200325010924.png" alt="f:id:arakan_no_boku:20200325010924p:plain" title="f:id:arakan_no_boku:20200325010924p:plain" class="hatena-fotolife" itemprop="image" /></p>
+<p> </p>
+<h4>はじめに</h4>
+<p> </p>
+<p>Numpyのドキュメントは充実してます。</p>
+<p><iframe class="embed-card embed-webcard" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" title="NumPy Reference — NumPy v1.19.dev0 Manual" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fnumpy.org%2Fdevdocs%2Freference%2Findex.html" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://numpy.org/devdocs/reference/index.html">numpy.org</a></cite></p>
+<p>かつ、ネット上にも大量の情報があるので、やりたいことを<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B0%A5%B0%A4%EB">ググる</a>とたいてい見つけられます。</p>
+<p>でも、ちょっとだけ参照したい・・という自分が求める粒度で情報が一か所にまとまったものがあると楽だというのに気づいたので、まとめてみます。</p>
+<p>なお。</p>
+<p>今回も例としてNumpyのコードを書いてますが、それらは、以下のようにNumpyをインポートしていることを前提にしています。</p>
+<blockquote>
+<p>import numpy as np</p>
+</blockquote>
+<p> さて。</p>
+<p> </p>
+<h4>Numpy配列内の型（dtype指定）</h4>
+<p> </p>
+<p>Numpyは配列内はすべて同じ型にそろえられます。</p>
+<p>型を指定して生成できますし、データを与えて生成すると適切なものにしてくれるみたいですが、いちおうデフォルトは<a class="keyword" href="http://d.hatena.ne.jp/keyword/python">python</a>のfloatと互換性のある「float_」という型になります。</p>
+<table>
+<tbody>
+<tr>
+<th>dtype</th>
+<th>互換性</th>
+<th>コメント</th>
+</tr>
+<tr>
+<td>float_</td>
+<td><a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>の「float」</td>
+<td>Numpyのデフォルト</td>
+</tr>
+<tr>
+<td>uint</td>
+<td><a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>の「int」</td>
+<td>符号なし</td>
+</tr>
+<tr>
+<td>int_</td>
+<td><a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>の「int」</td>
+<td>符号あり</td>
+</tr>
+<tr>
+<td>bool_</td>
+<td><a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>の「bool」</td>
+<td> </td>
+</tr>
+<tr>
+<td>int8</td>
+<td>8ビット整数</td>
+<td>符号あり</td>
+</tr>
+<tr>
+<td>int16</td>
+<td>16ビット整数</td>
+<td>符号あり</td>
+</tr>
+<tr>
+<td>int32</td>
+<td>32ビット整数</td>
+<td>符号あり</td>
+</tr>
+<tr>
+<td>int64</td>
+<td>64ビット整数</td>
+<td>符号あり</td>
+</tr>
+<tr>
+<td>uint8</td>
+<td>8ビット整数</td>
+<td>符号なし</td>
+</tr>
+<tr>
+<td>uint16</td>
+<td>16ビット整数</td>
+<td>符号なし</td>
+</tr>
+<tr>
+<td>uint32</td>
+<td>32ビット整数</td>
+<td>符号なし</td>
+</tr>
+<tr>
+<td>uint64</td>
+<td>64ビット整数</td>
+<td>符号なし</td>
+</tr>
+<tr>
+<td>float16</td>
+<td>16ビット<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%E2%C6%B0%BE%AE%BF%F4%C5%C0%BF%F4">浮動小数点数</a></td>
+<td> </td>
+</tr>
+<tr>
+<td>float32</td>
+<td>32ビット<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%E2%C6%B0%BE%AE%BF%F4%C5%C0%BF%F4">浮動小数点数</a></td>
+<td> </td>
+</tr>
+<tr>
+<td>float64</td>
+<td>64ビット<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%E2%C6%B0%BE%AE%BF%F4%C5%C0%BF%F4">浮動小数点数</a></td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<p>これ以外にもあります。</p>
+<p>自分はこれら以外はほぼ使わないので・・必要なら、こちらで。</p>
+<p><iframe class="embed-card embed-webcard" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" title="Scalars — NumPy v1.19.dev0 Manual" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fnumpy.org%2Fdevdocs%2Freference%2Farrays.scalars.html" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://numpy.org/devdocs/reference/arrays.scalars.html">numpy.org</a></cite></p>
+<p> </p>
+<h4>Numpy配列を構築する</h4>
+<p> </p>
+<p>メソッドを使って初期値をセットしたNumpy配列を作ります。</p>
+<p> </p>
+<p><strong>すべてを0で初期化する</strong></p>
+<pre class="prettyprint">np.zeros((2, 2), dtype=np.float32)</pre>
+<p>結果は</p>
+<blockquote>
+<p>[[0. 0.] [0. 0.]]</p>
+</blockquote>
+<p> </p>
+<p><strong>すべてを1で初期化する</strong></p>
+<pre class="prettyprint"> np.ones((2, 2), dtype=np.float32)   </pre>
+<p>結果は</p>
+<blockquote>
+<p>[[1. 1.] [1. 1.]]</p>
+</blockquote>
+<p> </p>
+<p><strong>対角要素に1それ以外に0をセットして初期化する</strong></p>
+<pre class="prettyprint">np.eye(3, dtype=np.float32)   </pre>
+<p>結果は</p>
+<blockquote>
+<p>[</p>
+<p>[1. 0. 0.]</p>
+<p>[0. 1. 0.]</p>
+<p>[0. 0. 1.]</p>
+<p>]</p>
+</blockquote>
+<p> </p>
+<p><strong>指定の値ですべてを埋めた配列を作る</strong></p>
+<pre class="prettyprint">np.full((2, 2), 3.14)</pre>
+<p>結果は</p>
+<blockquote>
+<p>[[3.14 3.14] [3.14 3.14]]</p>
+</blockquote>
+<p> </p>
+<p><strong>乱数生成を使って初期化するもの</strong> </p>
+<table>
+<tbody>
+<tr>
+<th>例</th>
+<th>説明</th>
+<th>結果</th>
+</tr>
+<tr>
+<td>
+<pre class="prettyprint">np.random.random((2, 2))</pre>
+</td>
+<td>一様分布の乱数で初期化</td>
+<td>[[0.83874852 0.25393169] [0.48973298 0.63288969]]</td>
+</tr>
+<tr>
+<td>
+<pre class="prettyprint">np.random.normal(1, 2, (2, 2))</pre>
+</td>
+<td>平均１<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%B8%BD%E0%CA%D0%BA%B9">標準偏差</a>２の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%B5%B5%AC%CA%AC%C9%DB">正規分布</a></td>
+<td>[[ 2.78714269 -1.10804489] [-0.13093131 1.58371071]]</td>
+</tr>
+<tr>
+<td>
+<pre class="prettyprint">np.random.randint(0, 10, (2, 2))</pre>
+</td>
+<td>指定範囲の一様分布の整数</td>
+<td>[[0 3] [5 2]]</td>
+</tr>
+<tr>
+<td>
+<pre class="prettyprint">np.random.rand(2, 2)</pre>
+</td>
+<td>0.0以上1.0未満の乱数</td>
+<td>[[0.2219319 0.16752553] [0.53437944 0.76555056]]</td>
+</tr>
+<tr>
+<td>
+<pre class="prettyprint">np.random.randn(2, 2)</pre>
+</td>
+<td>平均0分散1の乱数で初期化</td>
+<td>[[-2.27146338 -0.00306964] [-1.04215926 1.20743357]]</td>
+</tr>
+</tbody>
+</table>
+<p>np.random のバリエーションは沢山あります。</p>
+<p>もっと調べたい時はこちら。</p>
+<p><iframe class="embed-card embed-webcard" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" title="Legacy Random Generation — NumPy v1.19.dev0 Manual" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fnumpy.org%2Fdevdocs%2Freference%2Frandom%2Flegacy.html" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://numpy.org/devdocs/reference/random/legacy.html">numpy.org</a></cite></p>
+<p> </p>
+<p><strong>for文なんかで少数の値を使いたいとき</strong></p>
+<pre class="prettyprint">for x in np.arange(1.0,20.0, 0.2):
+    print(x)
+</pre>
+<p>みたいに「np.arange」を使う。</p>
+<p>結果は</p>
+<blockquote>
+<p>1.0<br />1.2<br />1.4<br />1.5999999999999999<br />1.7999999999999998</p>
+</blockquote>
+<p>みたいになります。</p>
+<p> </p>
+<p><strong><a class="keyword" href="http://d.hatena.ne.jp/keyword/python">python</a>のリストと相互変換する</strong></p>
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/python">python</a>のlistからNumpy配列にしたり、戻したりするやつです。</p>
+<pre class="prettyprint">lstbase = [[1, 2, 3], [4, 5, 6]]
+# listからNumpy配列
+al1 = np.array(lstbase, dtype="float64")
+
+# Numpy配列からlist
+lstafter = al1.tolist()
+</pre>
+<p>リストに戻す時は、当然、Numpy配列のdtypeと互換性のある<a class="keyword" href="http://d.hatena.ne.jp/keyword/python">python</a>の型になります。</p>
+<p> </p>
+<h4>Numpy配列の属性を確認する</h4>
+<p>Numpy配列の形状やサイズなどの情報を取り出します。</p>
+<p>イメージしづらいので、こんな3行2列の配列の属性を取得する例を書きます。</p>
+<blockquote>
+<p>[[6.32486041 1.82922998]<br /> [1.91987168 0.40812655]<br /> [2.4821602 1.54720082]]</p>
+</blockquote>
+<p> </p>
+<p><strong>配列の属性を確認する</strong></p>
+<p>上記配列の名前は「a12」としています。</p>
+<table>
+<tbody>
+<tr>
+<th>書き方（配列をarとする）</th>
+<th>意味</th>
+<th>結果</th>
+</tr>
+<tr>
+<td>a12.shape</td>
+<td>配列形状のタプル</td>
+<td>(3, 2)</td>
+</tr>
+<tr>
+<td>a12.shape[0]</td>
+<td>2次元の場合なら「行」</td>
+<td>3</td>
+</tr>
+<tr>
+<td>a12.shape[1]</td>
+<td>2次元の場合なら「列」</td>
+<td>2</td>
+</tr>
+<tr>
+<td>a12.ndim</td>
+<td>配列の次元数</td>
+<td>2</td>
+</tr>
+<tr>
+<td>a12.dtype</td>
+<td>配列の型</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>a12.size</td>
+<td>配列の合計サイズ</td>
+<td>6　：　3×2だから</td>
+</tr>
+<tr>
+<td>a12.itemsize</td>
+<td>各要素のバイト数</td>
+<td>8　（バイト）</td>
+</tr>
+<tr>
+<td>a12.nbytes</td>
+<td>配列の合計バイト数</td>
+<td>48（バイト：size×itemsize）</td>
+</tr>
+</tbody>
+</table>
+<p> のように取得できます。</p>
+<p>他にもありますが、それはこちらで。</p>
+<p><iframe class="embed-card embed-webcard" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" title="The N-dimensional array (ndarray) — NumPy v1.19.dev0 Manual" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fnumpy.org%2Fdevdocs%2Freference%2Farrays.ndarray.html" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://numpy.org/devdocs/reference/arrays.ndarray.html">numpy.org</a></cite></p>
+<p> </p>
+<p><strong>ndimとaxisについて</strong></p>
+<p>ちなみに</p>
+<ul>
+<li>ndimは「次元数」</li>
+<li>axisは「軸」</li>
+</ul>
+<p>です。</p>
+<p>例えば、以下のような3行4列の配列は2次元配列なので、ndimは「2」です。</p>
+<p>axis=0を指定すると列が軸、axis=1を指定すると行が軸です。</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20200327/20200327101512.png" alt="f:id:arakan_no_boku:20200327101512p:plain" title="f:id:arakan_no_boku:20200327101512p:plain" class="hatena-fotolife" itemprop="image" /> </p>
+<p> </p>
+<h4>Numpy配列のループ</h4>
+<p>Numpy配列の値をとりだして、forループを回す例です。</p>
+<p>こんな感じの3行2列のNumpy配列を使ってやってみます。</p>
+<blockquote>
+<p>[[0.83751433 0.02594981]<br /> [2.8441739 3.17256053]<br /> [0.04499033 2.14228941]]</p>
+</blockquote>
+<p>上記配列は「a12」という名前で例を書いてます。</p>
+<p>データだけを取り出す場合と、インデックスとデータ両方を取り出す場合があります。 </p>
+<p> </p>
+<p><strong>データだけを取り出すループ</strong></p>
+<pre class="prettyprint">for x in np.nditer(a12):
+    print(x)
+</pre>
+<p>出力結果はこんな感じでデータだけを順番に取得します。</p>
+<blockquote>
+<p>0.8375143297961567<br />0.025949813102027264<br />2.8441738981495615<br />3.1725605261342964<br />0.04499033206824665<br />2.142289407822542</p>
+</blockquote>
+<p> </p>
+<p><strong>インデックスとデータを取り出すパターン</strong></p>
+<p>インデックスは、multi_indexで参照できます。</p>
+<pre class="prettyprint"> it = np.nditer(a12, flags=['multi_index'])
+for x1 in it:
+    print(it.multi_index, ":", x1)  
+</pre>
+<p>出力結果はこんな感じになります。 </p>
+<blockquote>
+<p>(0, 0) : 0.8375143297961567<br />(0, 1) : 0.025949813102027264<br />(1, 0) : 2.8441738981495615<br />(1, 1) : 3.1725605261342964<br />(2, 0) : 0.04499033206824665<br />(2, 1) : 2.142289407822542</p>
+</blockquote>
+<p> </p>
+<h4>Numpy配列からのデータの取り出しとスライス</h4>
+<p> </p>
+<p>Numpy配列も<a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>のリストと同じように添え字で値を参照します。</p>
+<p>上記例で使った配列「a12」をそのまま使うなら。</p>
+<blockquote>
+<p>a12[1,0] </p>
+</blockquote>
+<p> とすると</p>
+<blockquote>
+<p>2.8441738981495615</p>
+</blockquote>
+<p>が取得できる感じで。</p>
+<p>同様に、スライスもできて、記述方法とルールも同じです。</p>
+<blockquote>
+<p>anylist[start:end:stride] </p>
+<p>start：指定した添え字を含む、省略すると「0」（つまり添え字の先頭）</p>
+<p>end：指定した添え字を含まない。省略すると「最後の要素まで」</p>
+<p>stride：カウントアップする幅、省略すると「1」。-1だと逆順になる。</p>
+</blockquote>
+<p><iframe class="embed-card embed-blogcard" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;" title="Pythonのシーケンススライス構文のよく使う部分をまとめておく - &quot;BOKU&quot;のITな日常" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Farakan-pgm-ai.hatenablog.com%2Fentry%2F2018%2F11%2F29%2F090000" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://arakan-pgm-ai.hatenablog.com/entry/2018/11/29/090000">arakan-pgm-ai.hatenablog.com</a></cite></p>
+<p> </p>
+<p><strong>Numpy配列のスライスの例です。</strong></p>
+<p>こういう配列データを使って例（結果列）を書いてます。。</p>
+<blockquote>
+<p>[[2 2 5 5]<br /> [4 3 0 2]<br /> [0 3 2 1]]</p>
+</blockquote>
+<p> この配列を「a7」という名前で参照してます。</p>
+<table>
+<tbody>
+<tr>
+<th>書き方</th>
+<th>意味</th>
+<th>結果</th>
+</tr>
+<tr>
+<td>a7[2:, :]</td>
+<td>3行目から取り出し</td>
+<td>
+<p>[</p>
+<p>[0 3 2 1]</p>
+<p>]</p>
+</td>
+</tr>
+<tr>
+<td>a7[:, :2]</td>
+<td>2列目までとりだし</td>
+<td>[[2 2] [4 3] [0 3]]</td>
+</tr>
+<tr>
+<td>a7[::2, ::2]</td>
+<td>行列共に１つおきに取り出し</td>
+<td>[[2 5] [0 2]]</td>
+</tr>
+<tr>
+<td>a7[:, ::-1]</td>
+<td>列を逆順にソート</td>
+<td>[[5 5 2 2] [2 0 3 4] [1 2 3 0]]</td>
+</tr>
+<tr>
+<td>a7[::-1, :]</td>
+<td>行を逆順にソート</td>
+<td>[[0 3 2 1] [4 3 0 2] [2 2 5 5]]</td>
+</tr>
+<tr>
+<td>a7[::-1, ::-1]</td>
+<td>行と列を共に逆順にソート</td>
+<td>[[1 2 3 0] [2 0 3 4] [5 5 2 2]]</td>
+</tr>
+<tr>
+<td>a7[:, 1]</td>
+<td>2列目をとりだす</td>
+<td>[2 3 3]</td>
+</tr>
+<tr>
+<td>a7[1, :]</td>
+<td>2行目をとりだす</td>
+<td>[4 3 0 2]</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h4>Numpy配列のソート</h4>
+<p> </p>
+<p>スライスの応用の逆順ソートがでてきたので、続けて昇順にソートする方法です。</p>
+<p>Numpyの昇順ソートは、np.sort()を使います。</p>
+<p>ソート例の元にする配列は「a7」という変数名にします。</p>
+<p>内容は以下です。</p>
+<blockquote>
+<p>[[5 4 8 6]<br /> [9 5 6 1]<br /> [2 0 3 0]]</p>
+</blockquote>
+<p> </p>
+<p><strong>axisの指定無しにソートする</strong></p>
+<pre class="prettyprint"> np.sort(a7)   
+</pre>
+<p>この結果はこうです。</p>
+<blockquote>
+<p>[[4 5 6 8]<br /> [1 5 6 9]<br /> [0 0 2 3]] </p>
+</blockquote>
+<p class="prettyprint">行単位で小さい数値が左から並ぶようにソートされています。</p>
+<p class="prettyprint"><br /><br /><strong>axis=0を指定してソートする<br /></strong><br />axis=0は列を軸にするイメージでした。<br /><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20200327/20200327101512.png" alt="f:id:arakan_no_boku:20200327101512p:plain" title="f:id:arakan_no_boku:20200327101512p:plain" class="hatena-fotolife" itemprop="image" /></p>
+<pre class="prettyprint"> np.sort(a7, axis=0)</pre>
+<p>この結果はこうです。 </p>
+<blockquote>
+<p> [[2 0 3 0]<br /> [5 4 6 1]<br /> [9 5 8 6]]</p>
+</blockquote>
+<p>列単位で小さい数値順に上から並び替えられているので、行でみるとシャッフルされたような感じになってます。</p>
+<p> </p>
+<p><strong>axis=1を指定してソートする</strong></p>
+<p>axis=1は行を軸にするソートです。 </p>
+<pre class="prettyprint">np.sort(a7, axis=1)
+</pre>
+<p>結果はこうです。 </p>
+<blockquote>
+<p> [[4 5 6 8]<br /> [1 5 6 9]<br /> [0 0 2 3]]</p>
+</blockquote>
+<p>行単位で左から小さい数字がならんでます。</p>
+<p>つまり」、無指定の場合と同じjになります。 </p>
+<p> </p>
+<h4>Numpy配列の形状変更</h4>
+<p> </p>
+<p>Numpy配列を処理の都合にあわせて形状変更するのはよくあります。</p>
+<p>それらの代表的なやり方だけまとめます。</p>
+<p> </p>
+<p><strong>一般的な形状変換パターン</strong></p>
+<p>元になるNumpy配列はこんな１次元配列にします。</p>
+<blockquote>
+<p>[1 2 3 4 5 6 7 8 9]</p>
+</blockquote>
+<p>配列の名前は「aj1」としています。</p>
+<p>これを「３×３」の二次元行列に変換するのは</p>
+<pre class="prettyprint">aj33 = aj1.reshape((3, 3))
+print(aj33)
+</pre>
+<p>返還後はこんな感じ</p>
+<blockquote>
+<p>[[1 2 3]<br /> [4 5 6]<br /> [7 8 9]] </p>
+</blockquote>
+<p> </p>
+<p><strong>１次元から２次元の行へ</strong></p>
+<p>これも頻繁に使います。</p>
+<blockquote>
+<p>[1 2 3 4 5 6 7 8 9]</p>
+</blockquote>
+<p>を</p>
+<blockquote>
+<p>[</p>
+<p>[1 2 3 4 5 6 7 8 9]</p>
+<p>] </p>
+</blockquote>
+<p>にするわけです。</p>
+<p>当然ながら、上と同じように「reshape(1, 9)」とやってもできます。</p>
+<p>でも、スライスで「np.newaxis」を使った以下のやり方を良く見ます。</p>
+<p>元になる1次元配列は「aj1」で参照しています。</p>
+<pre class="prettyprint">ajg2 = aj1[np.newaxis, :]
+print(ajg2)
+</pre>
+<p>結果はreshape(1,3）とした場合と全く同じです。</p>
+<blockquote>
+<p>[</p>
+<p>[1 2 3 4 5 6 7 8 9]</p>
+<p>]  </p>
+</blockquote>
+<p> </p>
+<p><strong>１次元から列ベクトルへ</strong></p>
+<p>これは、ようするに。</p>
+<blockquote>
+<p>[1 2 3 4 5 6 7 8 9]</p>
+</blockquote>
+<p>を</p>
+<blockquote>
+<p>[[1]<br /> [2]<br /> [3]<br /> [4]<br /> [5]<br /> [6]<br /> [7]<br /> [8]<br /> [9]]</p>
+</blockquote>
+<p>にすることです。</p>
+<p>当然ながら「reshape(9, 1)」とやってもできます。</p>
+<p>でも、こちらもスライスで「np.newaxis」を使ったパターンをよく見ます。</p>
+<p>元になる1次元配列は「aj1」で参照しています。</p>
+<pre class="prettyprint">ajg2 = aj1[:, np.newaxis]
+print(ajg2)
+</pre>
+<p>結果は「(9,1)でreshape()」した場合と同じです。</p>
+<p> </p>
+<p><strong>多次元から１次元に</strong></p>
+<p>ようするに、例えば</p>
+<blockquote>
+<p>[[1 2 3]<br /> [4 5 6]<br /> [7 8 9]] </p>
+</blockquote>
+<p> を</p>
+<blockquote>
+<p>[1 2 3 4 5 6 7 8 9]</p>
+</blockquote>
+<p>に戻すことです。</p>
+<p>flatten()を使います。</p>
+<p>以下に一旦３×３にして、1次元に戻す例をやってます。</p>
+<p>元の３×３配列を「aj33」として参照しています。</p>
+<pre class="prettyprint">af = aj33.flatten()
+print(af)
+</pre>
+<p>flatten()の結果はこんな感じ。 </p>
+<blockquote>
+<p>[1 2 3 4 5 6 7 8 9] </p>
+</blockquote>
+<p>いけてます。 </p>
+<p> </p>
+<p><strong>NUmpy配列を転置する</strong></p>
+<p>転置とは、例えば「３×４」の配列を、「４×３」にするみたいに、行と列を入れ替えることです。</p>
+<p>具体例でいえば</p>
+<blockquote>
+<p>[[4 4 3 1]<br /> [1 0 6 1]<br /> [8 6 6 6]]</p>
+</blockquote>
+<p>を</p>
+<blockquote>
+<p>[[4 1 8]<br /> [4 0 6]<br /> [3 6 6]<br /> [1 1 6]] </p>
+</blockquote>
+<p>にする感じです。</p>
+<p>これは、Numpy配列を「a7」とすると</p>
+<blockquote>
+<p>転置後の配列 =<strong> a7.T</strong></p>
+</blockquote>
+<p> とすればいいです。 </p>
+<p> </p>
+<h4>Numpy配列の連結</h4>
+<p> </p>
+<p>例えば。</p>
+<blockquote>
+<p>[[4 3 5]<br /> [2 5 9]<br /> [0 1 8]]</p>
+</blockquote>
+<p>と</p>
+<blockquote>
+<p>[[5 2 3]<br /> [4 1 6]<br /> [3 5 5]]</p>
+</blockquote>
+<p>という２つの３×３配列を連結します。</p>
+<p>便宜上、上を「g1」、下を「g2」とします。</p>
+<p> </p>
+<p><strong>配列を垂直（行が下に追加される感じ）で連結する</strong></p>
+<p>２つやり方があります。</p>
+<p>結果はどちらも同じです。</p>
+<pre class="prettyprint"># 方法１
+cg1 = np.concatenate([g1, g2])
+# 方法２
+cg3 = np.vstack([g1, g2])
+</pre>
+<p>どちらも結果は以下のように行追加の形になります。 </p>
+<blockquote>
+<p>[[4 3 5]<br /> [2 5 9]<br /> [0 1 8]<br /> [5 2 3]<br /> [4 1 6]<br /> [3 5 5]]</p>
+</blockquote>
+<p> </p>
+<p><strong>配列を水平（列が後ろに追加される感じ）で連結する。</strong></p>
+<p>こちらも2通りのやり方があり、結果はどちらも同じです。</p>
+<pre class="prettyprint"># 方法１
+cg2 = np.concatenate([g1, g2], axis=1)
+# 方法２
+cg4 = np.hstack([g1, g2])
+</pre>
+<p>結果は以下のように列が追加される感じになります。 </p>
+<blockquote>
+<p>[[4 3 5 5 2 3]<br /> [2 5 9 4 1 6]<br /> [0 1 8 3 5 5]] </p>
+</blockquote>
+<p> </p>
+<h4>Numpy配列の分割</h4>
+<p> </p>
+<p>連結があれば、分割がある・・ということで。</p>
+<p>さきほどの最<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BD%AA%B7%EB">終結</a>果の</p>
+<blockquote>
+<p>[[8 7 6 4 9 9]<br /> [7 7 1 5 7 5]<br /> [9 4 3 6 0 0]]</p>
+</blockquote>
+<p>を分割してみます。</p>
+<p> </p>
+<p><strong>垂直方向（行単位でわかれていく感じ）に分割する</strong></p>
+<p>とりあえず３つに分けます。</p>
+<p>２つの方法があります。</p>
+<pre class="prettyprint"># 方法１
+d1, d2, d3 = np.vsplit(cg2, 3)
+#　方法２
+ds1, ds2, ds3 = np.split(cg2, 3, axis=0)
+</pre>
+<p>どちらも結果は同じです。</p>
+<p>注意するのは分割する数にあわせ、左辺の受取側を増やさないといけないところです。</p>
+<p>３つを続けて表示すると。</p>
+<blockquote>
+<p>[</p>
+<p>[8 7 6 4 9 9]</p>
+<p>]</p>
+<p>[</p>
+<p>[7 7 1 5 7 5]</p>
+<p>]<br />[</p>
+<p>[9 4 3 6 0 0]</p>
+<p>]</p>
+</blockquote>
+<p> </p>
+<p><strong>水平方向（列単位でわかれていく感じ）に分割する</strong></p>
+<p> これも２つの方法があります。</p>
+<pre class="prettyprint"># 方法１
+h1, h2, h3 = np.hsplit(cg2, 3)
+
+# 方法２
+hs1, hs2, hs3 = np.split(cg2, 3, axis=1)
+</pre>
+<p>結果はこんな感じで列方向に３つにわかれます。</p>
+<blockquote>
+<p>[[8 7]<br /> [7 7]<br /> [9 4]]</p>
+<p><br />[[6 4]<br /> [1 5]<br /> [3 6]]</p>
+<p><br />[[9 9]<br /> [7 5]<br /> [0 0]] </p>
+</blockquote>
+<p> 左辺の受取側を分割する数にあわせて増やさないといけないのは同じです。</p>
+<p> </p>
+<h4>Numpy配列同士の演算</h4>
+<p> </p>
+<p>Numpyには「ユニバーサル関数（ufunc）」と呼ばれる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%E9%BB%BB%BB%D2">演算子</a>や関数が多く実装されていて、他の方法で行うより高速に処理できるようになってます。</p>
+<p> </p>
+<p><strong>まずは<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%E9%BB%BB%BB%D2">演算子</a></strong></p>
+<p> </p>
+<p>Numpy配列同士の演算の例と計算結果を書いてます。</p>
+<p>[[6 3]<br /> [4 6]]</p>
+<p><br />[[2 2]<br /> [2 2]]</p>
+<p> </p>
+<p> 以下表の式の例は上の配列が「a」、下の配列を「b」と読み替えて結果を見てもらえるとわかりやすいです。</p>
+<table>
+<tbody>
+<tr>
+<th>算術<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%E9%BB%BB%BB%D2">演算子</a></th>
+<th>説明</th>
+<th>式の例</th>
+<th>結果例</th>
+</tr>
+<tr>
+<th>＋</th>
+<th>加算</th>
+<th>a + b</th>
+<th>[[8 5] [6 8]]</th>
+</tr>
+<tr>
+<td>-</td>
+<td>減算</td>
+<td>a - b</td>
+<td>[[4 1] [2 4]]</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乗算</td>
+<td>a * b</td>
+<td>[[12 6] [ 8 12]]</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除算(結果は少数）</td>
+<td>a / b</td>
+<td>[[3. 1.5] [2. 3. ]]</td>
+</tr>
+<tr>
+<td>//</td>
+<td>整数除算</td>
+<td>a // b</td>
+<td>[[3 1] [2 3]]</td>
+</tr>
+<tr>
+<td>**</td>
+<td>べき条</td>
+<td>a ** b</td>
+<td>[[36 9] [16 36]]</td>
+</tr>
+<tr>
+<td>%</td>
+<td>余剰（あまり）</td>
+<td>a % b</td>
+<td>[[0 1] [0 0]]</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>比較<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%E9%BB%BB%BB%D2">演算子</a></strong></p>
+<p> </p>
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%E9%BB%BB%BB%D2">演算子</a>だけだとイメージしづらいので、以下のデータを使って例と結果を書きます。</p>
+<blockquote>
+<p>[[6 3 4]<br /> [4 6 3]]</p>
+<p><br />[[-6 3 8]<br /> [-4 6 4]]</p>
+</blockquote>
+<p> 上を「a」、下を「c」として例と結果を書いています。</p>
+<table>
+<tbody>
+<tr>
+<th>算術<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%E9%BB%BB%BB%D2">演算子</a>・関数</th>
+<th>説明</th>
+<th>式の例</th>
+<th>結果例</th>
+</tr>
+<tr>
+<td>==</td>
+<td>等しい</td>
+<td>a == c</td>
+<td>[[False True False] [False True False]]</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>等しくない</td>
+<td>a != c</td>
+<td>[[ True False True] [ True False True]]</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>より小さい</td>
+<td>a &lt; c</td>
+<td>[[False False True] [False False True]]</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>より小さいか等しい</td>
+<td>a &lt;= c</td>
+<td>[[False True True] [False True True]]</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>より大きい</td>
+<td>a &gt; c</td>
+<td>[[ True False False] [ True False False]]</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>より大きいか等しい</td>
+<td>a &gt;= c</td>
+<td>[[ True True False] [ True True False]]</td>
+</tr>
+<tr>
+<td>np.any</td>
+<td>条件に一致するものがひとつでもあればTrue</td>
+<td>np.any(a == 4)</td>
+<td>True</td>
+</tr>
+<tr>
+<td>np.all</td>
+<td>すべての値が条件に一致すればTrue</td>
+<td>np.all(a == 4)</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>関数</strong></p>
+<p>主に集約や最大値・最小値を取得する関数です。</p>
+<p>イメージしやすいように、以下の配列を引数にした結果を表に書いてます。</p>
+<blockquote>
+<p>[[-6 3 8]<br /> [-4 6 4]]</p>
+</blockquote>
+<p> 上記は「d」として表現しています。</p>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<th>組込み関数(例）</th>
+<th>説明</th>
+<th>結果</th>
+</tr>
+<tr>
+<td>np.absolute(d)</td>
+<td>絶対値</td>
+<td>[[6 3 8] [4 6 4]]</td>
+</tr>
+<tr>
+<td>np.sum(d)</td>
+<td>配列全たの合計</td>
+<td>11</td>
+</tr>
+<tr>
+<td>d.sum(axis=0)</td>
+<td>列単位の合計</td>
+<td>[-10 9 12]</td>
+</tr>
+<tr>
+<td>d.sum(axis=1)</td>
+<td>行単位の合計</td>
+<td>[5 6]</td>
+</tr>
+<tr>
+<td>np.max(d)</td>
+<td>配列全体の最大値</td>
+<td>8</td>
+</tr>
+<tr>
+<td>d.max(axis=0)</td>
+<td>列単位の最大値</td>
+<td>[-4 6 8]</td>
+</tr>
+<tr>
+<td>d.max(axis=1)</td>
+<td>行単位の最大値</td>
+<td>[8 6]</td>
+</tr>
+<tr>
+<td>np.argmax(d)</td>
+<td>配列全体の最大値のインデックス</td>
+<td>2</td>
+</tr>
+<tr>
+<td>d.argmax(axis=0)</td>
+<td>行単位の最大値のインデックス</td>
+<td>[1 1 0]</td>
+</tr>
+<tr>
+<td>d.argmax(axis=1)</td>
+<td>列単位の最大値のインデックス</td>
+<td>[2 1]</td>
+</tr>
+<tr>
+<td>np.min(d)</td>
+<td>配列全体の最小値</td>
+<td>-6</td>
+</tr>
+<tr>
+<td>d.min(axis=0)</td>
+<td>列単位の最大値</td>
+<td>[-6 3 4]</td>
+</tr>
+<tr>
+<td>d.min(axis=1)</td>
+<td>行単位の最大値</td>
+<td>[-6 -4]</td>
+</tr>
+<tr>
+<td>np.prod(d)</td>
+<td>要素の籍を計算</td>
+<td>13824</td>
+</tr>
+<tr>
+<td>np.mean(d)</td>
+<td>要素の平均値を計算</td>
+<td>1.83333333333333</td>
+</tr>
+<tr>
+<td>np.median(d)</td>
+<td>要素の中央値を計算</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td>np.dot(a, c)</td>
+<td>ドット積</td>
+<td>[[-72 48 92] [-66 57 80] [-66 57 80]]</td>
+</tr>
+</tbody>
+</table>
+<p>ドット積はわかりづらいので、補足のリンクです。</p>
+<p><iframe class="embed-card embed-webcard" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" title="ベクトルの内積や行列の積を求めるnumpy.dot関数の使い方" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fdeepage.net%2Ffeatures%2Fnumpy-dot.html" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://deepage.net/features/numpy-dot.html">deepage.net</a></cite></p>
+<p>ユニバーサル関数は他にも沢山あります。 </p>
+<p><iframe class="embed-card embed-webcard" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" title="Universal functions (ufunc) — NumPy v1.19.dev0 Manual" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fnumpy.org%2Fdevdocs%2Freference%2Fufuncs.html%23ufunc" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://numpy.org/devdocs/reference/ufuncs.html#ufunc">numpy.org</a></cite></p>
+<p>今のところ、こんな感じです。</p>
+<p>ファンシーインデックスや構造化配列は、今のところ自分はあまり使う機会がないのと、ページが長くなりすぎるので省いてます。</p>
+<p>他の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%DE%A4%C8%A4%E1%A5%DA%A1%BC%A5%B8">まとめページ</a>と同様、ぼちぼち書き足していこうかと思います。</p>
+<p>ではでは。</p>
+<p> </p>
+    
+
+  
+</div>
+
+    
+  <footer class="entry-footer">
+    
+    <div class="entry-tags-wrapper">
+  <div class="entry-tags">  </div>
+</div>
+
+    <p class="entry-footer-section">
+  <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="arakan_no_boku">arakan_no_boku</span></span>
+  <span class="entry-footer-time"><a href="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000"><time data-relative datetime="2020-03-29T15:00:00Z" title="2020-03-29T15:00:00Z" pubdate class="updated">2020-03-30 00:00</time></a></span>
+</p>
+
+    
+  <div class="hatena-star-container">
+  </div>
+  <div class="hatena-star-metadata" style="display: none">
+    <a class="hatena-star-permalink" href="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000">Numpyで良く参照する基本部分チートシート的まとめ</a>
+  </div>
+
+
+    
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <a href="https://b.hatena.ne.jp/entry/s/arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000" class="hatena-bookmark-button" data-hatena-bookmark-url="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </div>
+  
+  
+  
+    <div class="social-button-item">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/30/000000" data-count="vertical" data-text="Numpyで良く参照する基本部分チートシート的まとめ - &quot;BOKU&quot;のITな日常" data-lang="ja">Tweet</a>
+    </div>
+  
+  
+  
+    <span>
+      <div class="line-it-button" style="display: none;" data-type="share-e" data-lang="ja" ></div>
+      <script src="//scdn.line-apps.com/n/line_it/thirdparty/loader.min.js" async="async" defer="defer" ></script>
+    </span>
+  
+  
+</div>
+
+    
+  
+  
+    
+    <div class="google-afc-image test-google-rectangle-ads">      
+      
+      <div id="google_afc_user_container_0" class="google-afc-user-container google_afc_blocklink2_5 google_afc_boder" data-test-unit="/4374287/blog_user"></div>
+      
+        <a href="http://blog.hatena.ne.jp/guide/pro" class="open-pro-modal" data-guide-pro-modal-ad-url="https://hatenablog.com/guide/pro/modal/ad">広告を非表示にする</a>
+      
+    </div>
+  
+  
+
+
+    <div class="customized-footer">
+      
+
+        
+
+        
+
+        
+        
+
+      
+    </div>
+    
+  <div class="comment-box">
+    
+      <a class="leave-comment-title js-leave-comment-title">コメントを書く</a>
+    
+    <ul class="comment">
+      <li class="read-more-comments" style="display: none;"><a>もっと読む</a></li>
+    </ul>
+    
+  </div>
+
+  </footer>
+
+  </div>
+</article>
+
+      
+      
+    
+  
+
+  
+  <!-- rakuten_ad_target_end -->
+  <!-- google_ad_section_end -->
+  
+  
+  
+  <div class="pager pager-permalink permalink">
+    
+      
+      <span class="pager-prev">
+        <a href="https://arakan-pgm-ai.hatenablog.com/entry/2020/04/04/000000" rel="prev">
+          <span class="pager-arrow">&laquo; </span>
+          DBアクセス無し前提のdjangoの記事がたま…
+        </a>
+      </span>
+    
+    
+      
+      <span class="pager-next">
+        <a href="https://arakan-pgm-ai.hatenablog.com/entry/2020/03/05/000000" rel="next">
+          新型コロナウィルス（SARS-CoV2）関連情報…
+          <span class="pager-arrow"> &raquo;</span>
+        </a>
+      </span>
+    
+  </div>
+
+
+  
+
+
+
+        </div>
+      </div>
+
+      <aside id="box1">
+  <div id="box1-inner">
+  </div>
+</aside>
+
+    </div><!-- #wrapper -->
+
+    
+<aside id="box2">
+  
+  <div id="box2-inner">
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    検索
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="https://arakan-pgm-ai.hatenablog.com/search" method="get">
+  <input type="text" name="q" class="search-module-input" value="" placeholder="記事を検索" required>
+  <input type="submit" value="検索" class="search-module-button" />
+</form>
+
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">スポンサーリンク</div>
+  <div class="hatena-module-body">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8381216028300373"
+     data-ad-slot="3709340913"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-entries-access-ranking"
+  data-count="5"
+  data-source="access"
+  data-enable_customize_format="0"
+
+  data-display_entry_category="0"
+  data-display_entry_image="1"
+  data-display_entry_image_size_width="100"
+  data-display_entry_image_size_height="100"
+  data-display_entry_body_length="0"
+  data-display_entry_date="0"
+  data-display_entry_title_length="20"
+  data-restrict_entry_title_length="0"
+  data-display_bookmark_count="1"
+
+>
+  <div class="hatena-module-title">
+    
+      最近のアクセスTOP5
+    
+  </div>
+  <div class="hatena-module-body">
+    
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries category-Scratch:入門してみる">
+  <div class="hatena-module-title">
+    <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Scratch%3A%E5%85%A5%E9%96%80%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B">
+      Scratch（スクラッチ）
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist urllist-with-thumbnails">
+  
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+                      <a class="urllist-image-link recent-entries-image-link" href="https://arakan-pgm-ai.hatenablog.com/entry/2020/10/12/000000">
+  <img alt="Scratch（スクラッチ）入門（８）／リスト（配列）を使ってみよう" src="https://cdn.image.st-hatena.com/image/square/fa0c2d7fe04418560b582c82bc1cd3e3374d4408/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farakan_no_boku%2F20200824%2F20200824233948.png" class="urllist-image recent-entries-image" title="Scratch（スクラッチ）入門（８）／リスト（配列）を使ってみよう" width="100">
+</a>
+
+          <a href="https://arakan-pgm-ai.hatenablog.com/entry/2020/10/12/000000" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Scratch（スクラッチ）入門（８）／リスト（配列）を使ってみよう</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+                      <a class="urllist-image-link recent-entries-image-link" href="https://arakan-pgm-ai.hatenablog.com/entry/2020/10/05/000000">
+  <img alt="Scratch（スクラッチ）入門（７）／乱数とかIF文（条件式）とか使って動きに変化をつける" src="https://cdn.image.st-hatena.com/image/square/fa0c2d7fe04418560b582c82bc1cd3e3374d4408/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farakan_no_boku%2F20200824%2F20200824233948.png" class="urllist-image recent-entries-image" title="Scratch（スクラッチ）入門（７）／乱数とかIF文（条件式）とか使って動きに変化をつける" width="100">
+</a>
+
+          <a href="https://arakan-pgm-ai.hatenablog.com/entry/2020/10/05/000000" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Scratch（スクラッチ）入門（７）／乱数とかIF文（条件式）とか使って動きに変化をつける</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+                      <a class="urllist-image-link recent-entries-image-link" href="https://arakan-pgm-ai.hatenablog.com/entry/2020/09/23/000000">
+  <img alt="Scratch（スクラッチ）入門（６）／色の扱い方を整理してみよう。" src="https://cdn.image.st-hatena.com/image/square/fa0c2d7fe04418560b582c82bc1cd3e3374d4408/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farakan_no_boku%2F20200824%2F20200824233948.png" class="urllist-image recent-entries-image" title="Scratch（スクラッチ）入門（６）／色の扱い方を整理してみよう。" width="100">
+</a>
+
+          <a href="https://arakan-pgm-ai.hatenablog.com/entry/2020/09/23/000000" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Scratch（スクラッチ）入門（６）／色の扱い方を整理してみよう。</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+</ul>
+
+          <div class="urllist-see-more recent-entries-see-more">
+        <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Scratch%3A%E5%85%A5%E9%96%80%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"  class="urllist-see-more-link recent-entries-see-more-link">
+          もっと見る
+        </a>
+      </div>  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    BOKU
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="https://arakan-pgm-ai.hatenablog.com/about" class="profile-icon-link">
+      <img src="https://cdn.profile-image.st-hatena.com/users/arakan_no_boku/profile.png?1488024467"
+      alt="id:arakan_no_boku" class="profile-icon" />
+    </a>
+    
+
+    
+
+    
+
+    
+    <div class="profile-description">
+      <p>６２歳の文系SE”BOKU”です。<br />
+＜arakan_no_boku@yahoo.co.jp＞興味の向くまま遊び感覚で勉強して、自分の頭の整理と備忘を兼ねてブログに書いてます。IT系・・特に機械学習・プログラムネタが中心ですが、IT以外のネタになる時もあります。</p>
+
+    </div>
+    
+
+    
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box"
+  
+  >
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once>
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">
+    </span>
+  </div>
+</div>
+
+    
+
+    
+    <div class="hatena-follow-button-box btn-twitter">
+      <a href="https://twitter.com/arakan_boku" class="twitter-follow-button" data-show-count="false" data-lang="ja">
+        @arakan_bokuをフォロー
+      </a>
+    </div>
+    
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-links">
+  <div class="hatena-module-title">
+    リンク
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/about">プライバシーポリシー</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-category">
+  <div class="hatena-module-title">
+    カテゴリー
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/AI%E3%83%BB%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E7%9F%A5%E8%AD%98%E3%81%AE%E6%96%87%E7%B3%BB%E7%9A%84%E3%81%BE%E3%81%A8%E3%82%81" class="category-AI・機械学習知識の文系的まとめ">
+            AI・機械学習知識の文系的まとめ (9)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/AI%EF%BC%9ANeural%20Network%20Console" class="category-AI：Neural-Network-Console">
+            AI：Neural Network Console (51)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/AI%EF%BC%9ANLP_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86" class="category-AI：NLP_自然言語処理">
+            AI：NLP_自然言語処理 (14)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/AI%EF%BC%9Atensorflow1.0under" class="category-AI：tensorflow1.0under">
+            AI：tensorflow1.0under (12)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/AI%EF%BC%9Atensorflow2.0over" class="category-AI：tensorflow2.0over">
+            AI：tensorflow2.0over (8)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/AI%EF%BC%9A%E3%81%9D%E3%81%AE%E4%BB%96" class="category-AI：その他">
+            AI：その他 (12)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/ALL%3A%E3%82%88%E3%81%8F%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%80%8C%E3%81%BE%E3%81%A8%E3%82%81%E3%80%8D" class="category-ALL:よく参照する「まとめ」">
+            ALL:よく参照する「まとめ」 (7)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9AEXCEL%E3%83%8D%E3%82%BF" class="category-IT：EXCELネタ">
+            IT：EXCELネタ (13)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9AMySQL%E3%83%BBMariaDB" class="category-IT：MySQL・MariaDB">
+            IT：MySQL・MariaDB (4)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9ASE%E3%81%AE%E5%BF%83%E6%A7%8B%E3%83%8D%E3%82%BF" class="category-IT：SEの心構ネタ">
+            IT：SEの心構ネタ (5)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9ATIPS%E3%83%BB%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6" class="category-IT：TIPS・ノウハウ">
+            IT：TIPS・ノウハウ (15)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9AWEB%E6%8A%80%E8%A1%93%E5%8B%95%E5%90%91" class="category-IT：WEB技術動向">
+            IT：WEB技術動向 (5)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9A%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3" class="category-IT：セキュリティ">
+            IT：セキュリティ (20)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9A%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E8%A6%8B%E3%82%8B" class="category-IT：データを見る">
+            IT：データを見る (11)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9A%E3%83%88%E3%83%94%E3%83%83%E3%82%AF" class="category-IT：トピック">
+            IT：トピック (31)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9A%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E4%BB%96" class="category-IT：機械学習他">
+            IT：機械学習他 (7)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/IT%EF%BC%9A%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%83%BB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86" class="category-IT：開発環境・バージョン管理">
+            IT：開発環境・バージョン管理 (14)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/JAVA%3ASpring%20Boot" class="category-JAVA:Spring-Boot">
+            JAVA:Spring Boot (43)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/JavaScript%E3%83%BBHTML" class="category-JavaScript・HTML">
+            JavaScript・HTML (9)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/JavaScript%EF%BC%9A%3ANuxt" class="category-JavaScript：:Nuxt">
+            JavaScript：:Nuxt (11)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/javaScript%EF%BC%9AChart.js" class="category-javaScript：Chart.js">
+            javaScript：Chart.js (4)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/PHP%3ALaravel6.0" class="category-PHP:Laravel6.0">
+            PHP:Laravel6.0 (12)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/PHP%EF%BC%9A%E3%81%9D%E3%81%AE%E4%BB%96" class="category-PHP：その他">
+            PHP：その他 (20)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/python%3Apandas" class="category-python:pandas">
+            python:pandas (4)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Python%3A%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92" class="category-Python:機械学習">
+            Python:機械学習 (20)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Python%EF%BC%9Adjango" class="category-Python：django">
+            Python：django (20)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Python%EF%BC%9Adjango%20REST%20Framework" class="category-Python：django-REST-Framework">
+            Python：django REST Framework (5)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Python%EF%BC%9ARPA%E9%96%A2%E9%80%A3" class="category-Python：RPA関連">
+            Python：RPA関連 (7)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Python%EF%BC%9A%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%84%E3%82%8D%E3%81%84%E3%82%8D" class="category-Python：その他いろいろ">
+            Python：その他いろいろ (5)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Python%EF%BC%9A%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3" class="category-Python：ブロックチェーン">
+            Python：ブロックチェーン (3)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Python%EF%BC%9A%E6%95%B0%E5%AD%A6%E3%83%BB%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9" class="category-Python：数学・グラフィックス">
+            Python：数学・グラフィックス (16)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/python%EF%BC%9A%E6%96%87%E6%B3%95%E3%83%BBTips" class="category-python：文法・Tips">
+            python：文法・Tips (13)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/Scratch%3A%E5%85%A5%E9%96%80%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B" class="category-Scratch:入門してみる">
+            Scratch:入門してみる (8)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%9A%E3%83%88%E3%83%94%E3%83%83%E3%82%AF" class="category-その他：トピック">
+            その他：トピック (6)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%9A%E4%BB%95%E4%BA%8B%E3%83%8D%E3%82%BF" class="category-その他：仕事ネタ">
+            その他：仕事ネタ (26)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%9A%E6%88%90%E5%B9%B4%E5%BE%8C%E8%A6%8B%E4%BA%BA%E7%94%B3%E8%AB%8B%E6%89%8B%E7%B6%9A%E3%81%8D" class="category-その他：成年後見人申請手続き">
+            その他：成年後見人申請手続き (4)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%9A%E7%94%9F%E3%81%8D%E6%96%B9%E3%83%8D%E3%82%BF" class="category-その他：生き方ネタ">
+            その他：生き方ネタ (16)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://arakan-pgm-ai.hatenablog.com/archive/category/%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%9A%E7%A4%BE%E4%BC%9A%E3%83%8D%E3%82%BF" class="category-その他：社会ネタ">
+            その他：社会ネタ (14)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">  スポンサーリンク</div>
+  <div class="hatena-module-body">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8381216028300373"
+     data-ad-slot="4041988183"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+
+  </div>
+</div>
+
+
+
+
+        
+
+        
+  <div id="bottom-editarea">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+  CommonHTML: { matchFontHeight: false }
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://hatena.wackwack.net/v1.1/js/breadcrumb.min.js"></script>
+<script src="https://hatena.wackwack.net/v1.1/js/category_archive.min.js"></script>
+
+  </div>
+
+
+      </div>
+    </div>
+    
+<footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    
+      <div style="display:none !important" class="guest-footer js-guide-register test-blogs-register-guide" data-action="guide-register">
+  <div class="guest-footer-content">
+    <h3>はてなブログをはじめよう！</h3>
+    <p>arakan_no_bokuさんは、はてなブログを使っています。あなたもはてなブログをはじめてみませんか？</p>
+    <div class="guest-footer-btn-container">
+      <div  class="guest-footer-btn">
+        <a class="btn btn-register js-inherit-ga" href="https://blog.hatena.ne.jp/register?via=200227" target="_blank">はてなブログをはじめる（無料）</a>
+      </div>
+      <div  class="guest-footer-btn">
+        <a href="https://hatenablog.com/guide" target="_blank">はてなブログとは</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <address class="footer-address">
+      <a href="https://arakan-pgm-ai.hatenablog.com/">
+        <img src="https://cdn.image.st-hatena.com/image/square/6b8c48348512a4968a5094802d9a28fdc540eead/backend=imagemagick;height=128;version=1;width=128/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fcustom_blog_icon%2F126019961%2F1514208711960852" width="16" height="16" alt="&quot;BOKU&quot;のITな日常"/>
+        <span class="footer-address-name">&quot;BOKU&quot;のITな日常</span>
+      </a>
+    </address>
+    <p class="services">
+      Powered by <a href="https://hatenablog.com/">Hatena Blog</a>
+      |
+        <a href="https://blog.hatena.ne.jp/-/abuse_report?target_url=https%3A%2F%2Farakan-pgm-ai.hatenablog.com%2Fentry%2F2020%2F03%2F30%2F000000" class="report-abuse-link test-report-abuse-link" target="_blank">ブログを報告する</a>
+    </p>
+  </div>
+</footer>
+
+
+    
+
+    
+  <script src="https://s.hatena.ne.jp/js/HatenaStar.js?20191001"></script>
+
+
+    
+    
+
+<div class="quote-box">
+  <div class="tooltip-quote tooltip-quote-star">
+    <i class="blogicon-star" title="引用スターをつける"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-stock">
+    <i class="blogicon-quote" title="引用をストック"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet">
+    <a class="js-tweet-quote" target="_blank" data-track-name="quote-tweet" data-track-once><i class="blogicon-twitter" title="引用してツイートする"></i></a>
+  </div>
+</div>
+
+<div class="message-box" id="quote-star-message-box" style="display: none; position: absolute;">
+  スターをつけました
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script type="x-underscore-template" id="js-requote-button-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+    
+    <div id="hidden-subscribe-button" style="display: none;">
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box"
+  
+  >
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once>
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">
+    </span>
+  </div>
+</div>
+
+    </div>
+
+    
+  <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/jquery.min.js?version=1.12.3"></script>
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.js?version=0.8.3"></script>
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.time.js?version=0.8.3"></script>
+<script id="vendor-js" data-env="production" type="text/javascript" src="https://cdn.blog.st-hatena.com/js/vendor.js?version=fef36b58fdf1f97588f50a0cf1c7b72b93cf2eda&amp;env=production" crossorigin="anonymous"></script>
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/texts-ja.js?version=20de3dad7390835f6be6c31fcf01cbce4695ab0e&amp;env=production"></script>
+<script id="hatenablog-js" data-env="production"
+  type="text/javascript" src="https://cdn.blog.st-hatena.com/js/hatenablog.js?version=d44b1a9b70a9f58b34a3bb2fadac36cb7df09ee1&amp;env=production" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.GlobalHeader.init()</script>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+
+
+
+    
+  <script id="valve-dmp" data-service="blog" src="https://cdn.pool.st-hatena.com/valve/dmp.js" data-test-id="dmpjs" async></script>
+
+
+    
+
+
+
+
+
+  </body>
+</html>
+
